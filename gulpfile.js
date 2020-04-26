@@ -44,3 +44,26 @@ let style = () => {
         .pipe(browserSync.stream());
 }
 
+let userref = () => {
+    return gulp.src('./src/*.html')
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(useref())
+        .pipe(gulpIf('*.js', terser()))
+        // 3. pass the file through css minifier
+        // .pipe(gulpIf('*.css', cssnano()))
+
+        .pipe(gulp.dest('dist'));
+}
+ 
+
+// let fileincludes = () => {
+//     return gulp.src('./*.html')
+//     .pipe(fileinclude({
+//         prefix: '@@',
+//         basepath: '@file'
+//     }))
+//     .pipe(gulp.dest('dist'));
+// }
