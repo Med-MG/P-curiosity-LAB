@@ -1,3 +1,5 @@
+// Desktop Version 
+
 .getStarted{
     max-width: 1200px;
     margin-left: auto;
@@ -23,7 +25,9 @@
             }
 }
 
+// Desktop Version END
 
+// Mobile Version
 @media only screen and (max-width: 575px){
     .getStarted{
         &__subtitle{
@@ -34,3 +38,19 @@
         }
     }
 }
+
+// Mobile Version END
+
+// Tablette Version
+@media (min-width: 575px)and(max-width: 1024px){
+    .getStarted{
+        &__subtitle{
+            width: 80%;
+        }
+        &__bg{
+            width: 100%;
+        }
+    }
+}
+
+// Tablette Version END

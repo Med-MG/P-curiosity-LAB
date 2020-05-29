@@ -1,3 +1,5 @@
+// Desktop Version 
+
 .team {
     background-image: url("../images/bg-offer.png");
     position: relative;
@@ -115,7 +117,9 @@
     color: $secondary;
   }
 
+// Desktop Version END
 
+// Mobile Version 
   @media only screen and (max-width: 575px){
     .team{
       &__grid{
@@ -139,10 +143,12 @@
     }
   }
 
+// Mobile Version END
+
+
+// Tablette Version 
   @media (min-width: 575px)and(max-width: 1024px){
-    .getStarted__bg{
-      display: none;
-    }
+
 
     .team{
       &__title{
@@ -158,3 +164,4 @@
       }
     }
   }
+// Tablette Version END
