@@ -68,7 +68,7 @@
 @media only screen and (max-width: 575px){
 .mission{
     &__title{
-        margin: 0px 80px;
+        margin: 0px 64px;
         font-size: 48px;
     }
     &__wrapper{
@@ -111,3 +111,32 @@
 }
 
 // Mobile Version END
+
+
+// Tablette Version 
+@media (min-width: 575px)and(max-width: 1024px){
+    .mission{
+        &__title{
+            margin: 0px 80px;
+          }
+        &__subtitle{
+            line-height: 1.4em;
+            width: 100%;
+            font-size: 32px;
+        }
+        &__bg{
+            width: 158%;
+            margin-left: -72px;
+            margin-top: 0;
+            grid-area: 1/1;
+        }
+        &__para{
+            width: 90%;
+        }
+        &__more{
+            margin-top: 24px;
+        }
+    }
+}
+
+// Tablette Version END
