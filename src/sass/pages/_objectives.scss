@@ -49,5 +49,27 @@
 
 // Desktop Version END
 
-// // Mobile Version
-// @media only screen and (max-width: 575px)
+// Mobile Version
+@media only screen and (max-width: 575px){
+    .objectives{
+        margin-top: -104px;
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 33% 33% 33%;
+            margin: 40px auto 0px;
+            padding-bottom: 8px;
+        }
+        &__title{
+            font-size: 32px;
+        }
+        &__wrapper1{
+            margin-bottom: 120px;
+        }
+    }
+    .wrapper{
+        &__icon1,&__icon2,&__icon3{
+            width: 16%;
+        }
+    }
+}
