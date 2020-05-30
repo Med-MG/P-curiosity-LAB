@@ -44,6 +44,7 @@
         margin-right: auto;
         font-weight: 500;
         color: $primary-variant;
+        grid-row: 2/3;
     }
 }
 
@@ -70,6 +71,18 @@
     .wrapper{
         &__icon1,&__icon2,&__icon3{
             width: 16%;
+        }
+    }
+}
+
+// Mobile Version END
+
+// Tablette Version 
+@media (min-width: 575px)and(max-width: 1024px){
+    .wrapper{
+        &__icon1,&__icon2,&__icon3{
+            width: 120px;
+            height: 144px;
         }
     }
 }
