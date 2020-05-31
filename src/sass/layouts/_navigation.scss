@@ -7,12 +7,14 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        // position: fixed;
+        position: relative;
         z-index: 3;
-        top: 40px;
-        right: 100px;
+        // top: 40px;
+        // right: 10rem;
         background: transparent;
         cursor: pointer;
+
+       
     }
 
 
@@ -22,6 +24,12 @@
     top: 0;
     right: 0;
     width: 50%;
+    @include responsive(tab-port){
+        width: 70%;
+    }
+    @include responsive(phone){
+        width: 80%;
+    }
     background: #fff;
     height: 100%;
     transform: skewX(0deg) translate(100%, 0);
@@ -34,17 +42,17 @@
         transform: skewX(-8deg);
         transform-origin: top left;
         position: fixed;
-        right: 120px;
-        top: 120px;
-        width: 400px;
+        right: 12rem;
+        top: 17rem;
+        width: 40rem;
         text-align: right;
         &-item {
             list-style: none;
-            font-weight: 300;
+            font-weight: 400;
             color: hsl(0, 0%, 70%);
             position: relative;
             z-index: 999;
-            font-size: 32px;
+            font-size: 3.2rem;
             color: hsl(0, 0%, 10%);
             line-height: 64px;
             opacity: 0;
@@ -58,7 +66,7 @@
         }
     }
 
-    .active {
+    &.active {
         transform: skewX(8deg) translate(0, 0);
         z-index: 2;
 
@@ -70,8 +78,9 @@
 
         @for $i from 1 through 6 {
             & li:nth-child(#{$i}){
-                transition-delay: 0.2 + #{$i}s;
+                transition-delay:#{$i*0.1}s ;
             }
+
         }
        
     }

@@ -41,12 +41,22 @@
                 font-size: 5.9rem;
                 line-height: 1.3;
                 font-weight: 600;
+                width: 80rem;
+                @include responsive(tab-land) {
+                    width: 100%;
+                    display: inline-block;
+                }
             }
 
             .sub-heading {
                 color: #DDE4EE;
                 font-size: 4rem;
                 margin: 2rem 0;
+                width: 61rem; 
+                @include responsive(tab-land) {
+                    width: 100%;
+                    display: inline-block;
+                }
                 @include responsive(tab-port) {
                     margin: 2rem 0;
                 }

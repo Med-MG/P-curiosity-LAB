@@ -19,7 +19,7 @@
 // 16:9 video ratio
 @mixin videoratio($width) {
     width: $width;
-    height: calc((#{$width} / 16rem)*9);
+    height: #{($width / 16)*9};
 }
 //MEDIA QUERY MANNAGER
 
