@@ -19,3 +19,72 @@
         }
     }
 }
+
+
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 1rem;
+        transition: all .2s;
+        position: relative;
+        font-size: 2.6rem;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+        @include responsive(tab-port) {
+            display: block;
+            width: 35rem;
+            margin: 5rem auto;
+        }
+    }
+    &__arrow-tip {
+        width: 1.3rem;
+        margin-left: 2rem;
+    }
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    
+    &--blue {
+        background-color: $secondary-variant;
+        color: $color-white;
+
+        &::after {
+            background-color: $secondary-variant;
+        }
+    }
+
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 1rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+}

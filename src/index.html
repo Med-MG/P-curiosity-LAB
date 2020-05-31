@@ -1,40 +1,62 @@
 @@include('includes/nav.html')
 <header class="hero-header">
-    <nav class="hero-header__nav">
-        <div class="logo-box">
-            <img src="images/Logo-white.png" alt="" class="logo-box__img">
-        </div>
-        <button class="hamburger hamburger--emphatic " type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-        </button>
-    </nav>
-
-    <div class="hero-header__main">
-        <div class="hero-header__main-text">
-            <h1 class="heading">
-                We are 
-                <span class="plab-primary">P-curiosity Lab</span>
-                <span class="typist"></span>
-            </h1>
-            <p class="sub-heading">
-                An innovation lab to design
-                a new farmers services bio-inspired
-            </p>
-        </div>
-        <video class="video-js hero-header__video vjs-theme-forest"  controls preload="auto"  height="264" poster="images/video-thumb.png" data-setup='{}'>
-            <source src="videos/pcl-main.mp4" type="video/mp4">
-                <p class="vjs-no-js">
-                    To view this video please enable JavaScript, and consider upgrading to a
-                    web browser that
-                    <a href="https://videojs.com/html5-video-support/" target="_blank"
-                      >supports HTML5 video</a
-                    >
-                  </p>
-        </video>
+  <nav class="hero-header__nav">
+    <div class="logo-box">
+      <img src="images/Logo-white.png" alt="" class="logo-box__img" />
     </div>
-    <a href="" class="btn btn--header">Start A Projects <img src="images/arrow-tip.svg" alt="arrow-tip"></a>
+    
+    <div class="navigation">
+      <button class="hamburger hamburger--emphatic navigation__button" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="navigation__menu">
+          <ul class="navigation__menu-list">
+            <li class="navigation__menu-list-item"><a href="">HOME</a></li>
+            <li class="navigation__menu-list-item"><a href="">GALLERY</a></li>
+            <li class="navigation__menu-list-item"><a href="">CONTACT</a></li>
+            <li class="navigation__menu-list-item"><a href="">LOCATION</a></li>
+            <li class="navigation__menu-list-item"><a href="">TESTIMONIAL</a></li>
+            <li class="navigation__menu-list-item"><a href="">PRICING</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero-header__main">
+    <div class="hero-header__main-text">
+      <h1 class="heading">
+        We are
+        <span class="secondary-variant">P-curiosity Lab</span> <br>
+        <span class="typist"></span>
+      </h1>
+      <p class="sub-heading">
+        An innovation lab to design a new <br> farmers services bio-inspired
+      </p>
+    </div>
+    <div class="video-mask">
+      <video
+        class="video-js hero-header__video vjs-theme-forest"
+        controls
+        preload="auto"
+        poster="images/video-thumb.png"
+        data-setup="{}"
+      >
+        <source src="videos/pcl-main.mp4" type="video/mp4" />
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to
+          a web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank"
+            >supports HTML5 video</a
+          >
+        </p>
+      </video>
+    </div>
+  </div>
+  <a href="" class="btn btn--header btn--blue"
+    >Start A Projects <img class="btn__arrow-tip" src="images/arrow-tip.svg" alt="arrow-tip"
+  /></a>
 </header>
 
 @@include('includes/footer.html')
