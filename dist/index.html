@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://vjs.zencdn.net/7.8.2/video-js.css" rel="stylesheet" />
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <!-- Forest -->
+    <link
+      href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>P curiosity lab</title>
-</head>
-<body>    
+  </head>
+  <body></body>
+</html>
+
+<header class="hero-header">
+    <nav class="hero-header__nav">
+        <div class="logo-box">
+            <img src="images/Logo-white.png" alt="" class="logo-box__img">
+        </div>
+        <button class="hamburger hamburger--emphatic " type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </nav>
+
+    <div class="hero-header__main">
+        <div class="hero-header__main-text">
+            <h1 class="heading">
+                We are 
+                <span class="plab-primary">P-curiosity Lab</span>
+                <span class="typist"></span>
+            </h1>
+            <p class="sub-heading">
+                An innovation lab to design
+                a new farmers services bio-inspired
+            </p>
+        </div>
+        <video class="video-js hero-header__video vjs-theme-forest"  controls preload="auto"  height="264" poster="images/video-thumb.png" data-setup='{}'>
+            <source src="videos/pcl-main.mp4" type="video/mp4">
+                <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank"
+                      >supports HTML5 video</a
+                    >
+                  </p>
+        </video>
+    </div>
+    <a href="" class="btn btn--header">Start A Projects <img src="images/arrow-tip.svg" alt="arrow-tip"></a>
+</header>
 
 <footer class="footer"></footer>
     <script src="js/main.min.js"></script>
-
+    <script src="https://vjs.zencdn.net/7.8.2/video.js"></script>
 </body>
 </html>

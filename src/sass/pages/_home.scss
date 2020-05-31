@@ -1,0 +1,30 @@
+.hero-header {
+    background-image: url('../images/bg-Heroheader.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+    height: 75vh;
+    padding: 10rem;
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        .logo-box {
+            &__img{
+                width: 15rem;
+            }
+        }
+        // .hamburger {}
+    }
+    
+    &__main{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+        width: 100%;
+        &-text{
+            .heading{}
+            .sub-heading{}
+        }
+
+    }
+    &__video{}
+}
