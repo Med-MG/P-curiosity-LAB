@@ -12,6 +12,21 @@
     }
 }
 
+.form{
+    &__btnSend{
+        margin-top: 24px;
+        margin-bottom: 32px;
+        width: 100%;
+        border: none;
+        padding: 16px;
+        background-color: $secondary;
+        color: $color-white;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        }
+}
+
 @media only screen and (max-width: 575px){
     .getStarted{
         &__btn{
