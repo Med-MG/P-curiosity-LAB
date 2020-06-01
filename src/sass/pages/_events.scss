@@ -1,0 +1,48 @@
+.events {
+    position: relative;
+    padding: 10rem;
+    .bg-circle{
+        position: absolute;
+        width: 30rem;
+        top: 50%;
+        left: 0;
+        z-index: -1;
+    }
+    &__title{
+        margin: 0 auto;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__heading{
+        @include main-title;
+    }
+    &__subheading{
+        @include main-subheading;
+        width: 64%;
+        margin: .5rem auto;
+    }
+    &__main{}
+    &__list{}
+    &__item{
+        &--1{}
+        &--2{}
+        &--3{}
+        &-title{}
+        &-description{}
+    }
+
+    &__display{
+        &-box{}
+        &-img{
+            width: 20rem;
+        }
+        &-info{
+            &--1{}
+            &--2{}
+            &-icon{}
+            &-title{}
+            &-description{}
+        }
+
+    }
+}

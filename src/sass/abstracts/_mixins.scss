@@ -9,6 +9,18 @@
     font-weight: $medium-font-weight;
 }
 
+@mixin  main-title {
+    color: $primary;
+    font-size: 4rem;
+    font-weight: $medium-font-weight;
+}
+
+@mixin main-subheading {
+    color: $primary-variant;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    font-weight: $light-font-weight;
+}
 @mixin abs_centering {
     position: absolute;
     top: 50%;
