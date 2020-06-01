@@ -1,5 +1,5 @@
 .news {
-    padding: 20rem;
+    padding: 10rem;
 
     &-title {
         margin: 0 auto;
@@ -53,8 +53,9 @@
         width: 93%;
         margin: 0 auto;
         display: flex;
-        flex-flow: row wrap;
+        flex-wrap: wrap;
         justify-content: space-between;
+        align-content: center;
     }
 
     &__card {
@@ -68,15 +69,18 @@
         box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
         border-radius: .6rem;
         overflow: hidden;
-        
+        margin-bottom: 5rem;
+
         &-top {
-            @include videoratio(40rem);
+            @include videoratio(50rem);
             position: relative;
+
             &-img {
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
             }
+
             &-overlay {
                 position: absolute;
                 background-color: #3c4858 !important;
@@ -91,55 +95,83 @@
 
 
         &:hover {
+            transform: translateY(-1rem);
+
             .news__card-top-overlay {
                 opacity: .4;
             }
-        }
-        &.author {
-            display: none;
-            .user {}
 
-            .date {}
+            .author {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .author {
+            position: absolute;
+            top: 10%;
+            left: 7%;
+            z-index: 1;
+            opacity: 0;
+            transform: translateY(1rem);
+            transition: all 0.5s ease;
+
+            .user {
+                font-size: 1.5rem;
+                margin-bottom: .5rem;
+            }
+
+            .date {
+                font-size: 1.5rem;
+            }
         }
 
         &-body {
             padding: 1.6rem;
+
             &-meta {
                 display: flex;
                 justify-content: space-between;
                 padding: 1.5rem;
-                
+
                 .btn-blog {
                     font-size: 1.5rem;
+
                     &__icon {
                         font-size: 1.2rem;
                         margin-left: .5rem;
                     }
+
                     &:hover {
                         color: $secondary !important;
                     }
-                 }
+                }
             }
 
             // &-list {
-                
+
             // }
 
             &-item {
                 display: inline-block;
                 font-size: 1.6rem;
-                &.like {
+
+                .like {
                     margin-right: .7rem;
+                    transition: all 0.5s ease;
+
                     &:hover {
                         color: #e43f52 !important
                     }
                 }
 
-                
 
-                &.comment {
+
+                .comment {
+                    transition: all 0.5s ease;
+
                     &:hover {
-                        color: #2eca8b !important;;
+                        color: #2eca8b !important;
                     }
                 }
 
@@ -148,12 +180,17 @@
         }
 
         &-title {
-            max-width: 90%;
+            width: 40rem;
+
             .card-title {
                 text-decoration: none;
                 @include small-font;
                 color: $color-text-dark;
                 transition: all 0.5s ease;
+
+                &:hover {
+                    color: $secondary !important;
+                }
             }
         }
 

@@ -32,7 +32,7 @@
         grid-gap: 8rem;
         @include responsive(small-desktop) {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
         }
     }
 
