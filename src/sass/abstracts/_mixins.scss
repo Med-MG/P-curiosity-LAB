@@ -4,6 +4,12 @@
     font-weight: $medium-font-weight;
 }
 
+@mixin description-font {
+    font-size: 1.5rem;
+    font-weight: $light-font-weight;
+    color: $primary-variant;
+}
+
 @mixin medium-font {
     font-size: $medium-font-size;
     font-weight: $medium-font-weight;

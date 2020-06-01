@@ -104,19 +104,30 @@
     
 }
 
+
 .btn-text {
-    &,
     &:link,
     &:visited {
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 1.5rem 4rem;
+        font-size: 2rem;
+        color: $primary;
         display: inline-block;
-        border-radius: 1rem;
+        text-decoration: none;
+        border-bottom: 2.6px solid $primary;
+        padding: 3px;
         transition: all .2s;
-        position: relative;
-        font-size: 2.6rem;
     }
 
-    // &__events{}
+    &:hover {
+        background-color: $primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+
+
 }

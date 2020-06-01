@@ -1,6 +1,12 @@
-.offer{
+.offer {
     background-image: url("../images/bg-offer.png");
-    &__title{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 83vh;
+    background-position: 0 100%;
+    padding: 2rem;
+
+    &__title {
         text-align: center;
         color: $primary;
         font-size: 40px;
@@ -9,33 +15,39 @@
         margin-left: auto;
         margin-right: auto;
     }
-    &__titles{
+
+    &__titles {
         margin: 80px auto;
         max-width: 900px;
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: 100%;
     }
-    &__wrapper{
+
+    &__wrapper {
         max-width: 1200px;
         margin: 80px auto;
         display: grid;
         grid-template-columns: 40% 60%;
         grid-template-rows: 10% 67% 10%;
-        &--img{
+
+        &--img {
             grid-column: 1/2;
             grid-row: 1/3;
         }
-        &--img img{
+
+        &--img img {
             width: 80%;
             margin: auto;
             grid-area: 1/2;
         }
-        &--title{
+
+        &--title {
             font-size: 24px;
             font-weight: 500;
         }
-        &--para{
+
+        &--para {
             margin-top: 10px;
             font-size: 16px;
             font-weight: 400;
@@ -43,17 +55,20 @@
             text-align: justify;
         }
     }
-    &__more{
+
+    &__more {
         grid-area: 3/2;
     }
-    &__arrow{
+
+    &__arrow {
         font-size: 24px;
         margin-left: 8px;
         cursor: pointer;
         color: $primary;
         text-decoration: none;
     }
-    &__link{
+
+    &__link {
         color: $primary;
         font-size: 24px;
         text-decoration: none;
@@ -61,8 +76,8 @@
     }
 }
 
-.titles{
-    &__title{
+.titles {
+    &__title {
         margin: auto;
         font-size: 16px;
         font-weight: 400;
@@ -70,7 +85,7 @@
     }
 }
 
-.active{
+.active {
     font-weight: 600;
     color: $secondary-variant;
     text-decoration: underline;
