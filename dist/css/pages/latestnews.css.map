@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["pages/latestnews.css"],"sourcesContent":[""],"file":"latestnews.css"}
+{"version":3,"names":[],"mappings":"","sources":["pages/latestnews.css"],"sourcesContent":[".news{padding:20rem}.news-title{margin:0 auto}"],"file":"latestnews.css"}

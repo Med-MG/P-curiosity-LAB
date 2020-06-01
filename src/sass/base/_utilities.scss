@@ -12,9 +12,26 @@
 .u-mt-m { margin-top: 5rem !important; }
 .u-mt-b { margin-top: 8rem !important; }
 .u-mt-h { margin-top: 10rem !important; }
-
+.u-mr-2 { margin-right: 2rem;}
 
 //hidden utility
 .hidden {
     display: none !important;
+}
+
+// styling utilities
+
+.text-muted {color: #8492a6 !important;}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.text-light {color: #f8f9fc !important;}
+.rounded-top {
+    border-top-left-radius: 6px !important;
+    border-top-right-radius: 6px !important;
+}
+
+a {
+    text-decoration: none !important;
 }
