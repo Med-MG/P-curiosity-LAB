@@ -83,6 +83,7 @@
 
 // Mobile Version 
 @media only screen and (max-width: 575px){
+
     .work{
         &__title{
             font-size: 32px;
@@ -109,7 +110,7 @@
             font-size: 8px;
             margin-left: 32px;
             border-radius: 32%;
-            margin-top: 100px;
+            margin-top: 110px;
         }
         &__para2{
             grid-area: 1/2;

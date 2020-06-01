@@ -54,7 +54,6 @@
 @media only screen and (max-width: 575px){
     .objectives{
         margin-top: -104px;
-        width: 104%;
         &__wrapper{
             display: grid;
             grid-template-columns: 100%;
@@ -71,7 +70,7 @@
     }
     .wrapper{
         &__icon1,&__icon2,&__icon3{
-            width: 16%;
+            width: 12%;
         }
     }
 }
