@@ -5,8 +5,8 @@
     .bg-circle {
         position: absolute;
         width: 30rem;
-        top: 50%;
-        left: 0;
+        top: 39%;
+        left: -10rem;
         z-index: -1;
     }
 
@@ -28,7 +28,7 @@
 
     &__main {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 8rem;
         @include responsive(small-desktop) {
         grid-template-columns: 1fr;
@@ -43,6 +43,7 @@
         // }
         display: flex;
         flex-flow: column wrap;
+        align-items: flex-end;
         @include responsive(small-desktop){
             flex-direction: row;
         }
@@ -57,6 +58,7 @@
         transition: all .3s ease-in;
         background-color: $color-white;
         border-radius: 5px;
+        width: 75%;
         @include responsive(small-desktop){
             width: 30%;
         }
