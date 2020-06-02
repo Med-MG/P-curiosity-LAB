@@ -1,12 +1,9 @@
-.offer {
+// Desktop Version 
+.offer{
     background-image: url("../images/bg-offer.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 83vh;
-    background-position: 0 100%;
-    padding: 2rem;
-
-    &__title {
+    background-size: contain;
+    background-repeat: round;
+    &__title{
         text-align: center;
         color: $primary;
         font-size: 40px;
@@ -22,6 +19,7 @@
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: 100%;
+
     }
 
     &__wrapper {
@@ -82,6 +80,7 @@
         font-size: 16px;
         font-weight: 400;
         color: $primary-variant;
+        cursor: pointer;
     }
 }
 
@@ -90,3 +89,104 @@
     color: $secondary-variant;
     text-decoration: underline;
 }
+
+
+// Desktop Version END
+
+
+// Mobile Version
+@media only screen and (max-width: 575px){
+.offer{
+    background-image: url("../images/bg-offer.png");
+    background-size: cover;
+    background-repeat: space;
+    &__title{
+        font-size: 32px;
+        margin-top: 80px;
+    }
+    &__titles{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        margin: 20px auto;
+    }
+    &__wrapper{
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 32% 56% 10%;
+        &--title{
+            grid-area: 1/1;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            margin: auto;
+        }
+        &--img{
+            grid-area: 2/1;
+        }
+        &--img img{
+            display: block;
+            margin: auto;
+            width: 50%;
+        }
+        &--para{
+            grid-area: 3/1;
+            font-size: 14px;
+            line-height: 1.4em;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__more{
+        grid-area: 4/1;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    &__link{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    &__arrow{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+}
+
+.titles{
+    &__title{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+}
+
+
+// Mobile Version END
+
+// Tablette Version
+@media (min-width: 575px)and(max-width: 1024px){
+.offer{
+    margin-top: 166px;
+    &__titles{
+        margin: 40px auto;
+    }
+    &__wrapper{
+        margin: 40px auto;
+        max-width: 90%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 10% 80% 10%;
+    }
+}
+.titles{
+    &__title{
+        font-size: 16px;
+    }
+}
+}
+
+// Tablette Version END
