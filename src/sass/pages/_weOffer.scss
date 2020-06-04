@@ -1,9 +1,8 @@
-
-
 // Desktop Version 
+@media only screen and (min-width: 1025px){
 .offer{
     background-image: url("../images/bg-offer.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: round;
     &__title{
         text-align: center;
@@ -57,18 +56,15 @@
     &__more{
         grid-area: 3/2;
     }
-    &__arrow{
-        font-size: 24px;
-        margin-left: 8px;
-        cursor: pointer;
-        color: $primary;
-        text-decoration: none;
-    }
     &__link{
         color: $primary;
         font-size: 24px;
         text-decoration: none;
         border-bottom: 2px solid $primary;
+    }
+    &__link:hover{
+        color: $color-white;
+        background-color: $primary;
     }
 }
 
@@ -114,6 +110,7 @@
     display: none;
 }
 
+}
 
 // Desktop Version END
 
@@ -205,34 +202,113 @@
 // Mobile Version END
 
 // Tablette Version
-@media (min-width: 575px)and(max-width: 1024px){
+@media (min-width: 600px)and (max-width: 1024px){
 .offer{
+    background-image: url("../images/bg-offer.png");
+    background-size: cover;
+    background-repeat: round;
     margin-top: 166px;
+    &__title{
+        text-align: center;
+        font-size: 32px;
+        color: $primary;
+        font-weight: 500;
+    }
     &__titles{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
         margin: 40px auto;
+        padding-left: 10rem;
+        padding-right: 10rem;
     }
     &__wrapper{
         margin: 40px auto;
         max-width: 90%;
         display: grid;
-        grid-template-columns: 40% 60%;
-        grid-template-rows: 10% 80% 10%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 8% 88% 10%;
+        &--img{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            margin: auto;
+        }
+
+        &--img img{
+            width: 320px;
+            grid-row: 2/4;
+        }
+        &--title{
+            font-size: 18px;
+            grid-column: 2/3;
+        }
+        &--para{
+            font-size: 16px;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            text-align: justify;
+            span{
+                color: $secondary;
+                font-weight: 600;
+            }
+        }
     }
+    &__more{
+        grid-area: 3/2;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+    &__link{
+        font-size: 16px;
+        color: $primary;
+        text-decoration: none;
+
+    }
+    &__link:hover{
+        color: $color-white;
+        background-color: $primary;
+    }
+
 }
 .titles{
+    
     &__title1{
         font-size: 16px;
+        text-align: center;
+        font-weight: 500;
+        cursor: pointer;
+        padding-bottom: 20px;
     }
     &__title2{
         font-size: 16px;
+        text-align: center;
+        font-weight: 500;
+        cursor: pointer;
+        padding-bottom: 20px;
     }
     &__title3{
         font-size: 16px;
+        text-align: center;
+        font-weight: 500;
+        cursor: pointer;
     }
     &__title4{
         font-size: 16px;
+        text-align: center;
+        font-weight: 500;
+        cursor: pointer;
     }
 }
+.active{
+    font-size: 16px;
+    font-weight: 500;
+    color: $secondary-variant;
+    text-decoration: underline;
+}
+.idea,.business,.scientifics{
+    display: none;
+}
+
 }
 
 // Tablette Version END
