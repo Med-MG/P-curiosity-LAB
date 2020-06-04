@@ -1,5 +1,5 @@
 // Desktop Version 
-@media only screen and (min-width: 1025px){
+@media (min-width: 1025px) and (max-width: 1440px){
 .offer{
     background-image: url("../images/bg-offer.png");
     background-size: cover;
@@ -15,7 +15,7 @@
     }
     &__titles{
         margin: 80px auto;
-        max-width: 1004px;
+        max-width: 1174px;
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: 100%;
@@ -26,7 +26,7 @@
         margin: 80px auto;
         display: grid;
         grid-template-columns: 40% 60%;
-        grid-template-rows: 10% 67% 10%;
+        grid-template-rows: 10% 76% 10%;
         &--img{
             grid-column: 1/2;
             grid-row: 1/3;
@@ -42,14 +42,15 @@
             font-weight: 500;
         }
         &--para{
+            font-family: 'Nunito', sans-serif;
             margin-top: 10px;
-            font-size: 16px;
-            font-weight: 400;
+            font-size: 18px;
+            font-weight: 600;
             color: $primary-variant;
             text-align: justify;
             span{
                 color: $secondary;
-                font-weight: 600;
+                font-weight: 800;
             }
         }
     }
@@ -71,36 +72,36 @@
 .titles{
     &__title1{
         margin: auto;
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 16px;
+        font-weight: 500;
         color: $primary-variant;
         cursor: pointer;
     }
     &__title2{
         margin: auto;
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 16px;
+        font-weight: 500;
         color: $primary-variant;
         cursor: pointer;
     }
     &__title3{
         margin: auto;
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 16px;
+        font-weight: 500;
         color: $primary-variant;
         cursor: pointer;
     }
     &__title4{
         margin: auto;
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 16px;
+        font-weight: 500;
         color: $primary-variant;
         cursor: pointer;
     }
 }
 
 .active{
-    font-weight: 500;
+    font-weight: 600;
     color: $secondary-variant;
     text-decoration: underline;
 }
@@ -108,6 +109,7 @@
 .idea,.business,.scientifics{
     display: none;
 }
+
 
 }
 
@@ -158,6 +160,8 @@
             height: 174px;
         }
         &--para{
+            font-family: 'Nunito', sans-serif;
+            font-weight: 500;
             grid-area: 3/1;
             font-size: 14px;
             line-height: 1.8em;
@@ -168,7 +172,7 @@
             text-align: justify;
             span{
                 color: $secondary;
-                font-weight: 600;
+                font-weight: 800;
                 text-align: center;
             }
         }
@@ -264,13 +268,15 @@
             grid-column: 2/3;
         }
         &--para{
+            font-family: 'Nunito', sans-serif;
+            font-weight: 600;
             font-size: 16px;
             grid-column: 2/3;
             grid-row: 2/3;
             text-align: justify;
             span{
                 color: $secondary;
-                font-weight: 600;
+                font-weight: 800;
             }
         }
     }
