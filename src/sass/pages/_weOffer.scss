@@ -15,7 +15,7 @@
     }
     &__titles{
         margin: 80px auto;
-        max-width: 900px;
+        max-width: 1004px;
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: 100%;
@@ -71,28 +71,28 @@
 .titles{
     &__title1{
         margin: auto;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 400;
         color: $primary-variant;
         cursor: pointer;
     }
     &__title2{
         margin: auto;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 400;
         color: $primary-variant;
         cursor: pointer;
     }
     &__title3{
         margin: auto;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 400;
         color: $primary-variant;
         cursor: pointer;
     }
     &__title4{
         margin: auto;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 400;
         color: $primary-variant;
         cursor: pointer;
@@ -100,7 +100,6 @@
 }
 
 .active{
-    font-size: 16px;
     font-weight: 500;
     color: $secondary-variant;
     text-decoration: underline;
@@ -115,7 +114,7 @@
 // Desktop Version END
 
 // Mobile Version
-@media only screen and (max-width: 575px){
+@media (min-width: 320px) and (max-width: 480px){
 .offer{
     background-image: url("../images/bg-offer.png");
     background-size: cover;
@@ -123,18 +122,25 @@
     &__title{
         font-size: 32px;
         margin-top: 80px;
+        text-align: center;
+        font-weight: 500;
+        color: $primary;
     }
     &__titles{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 25% 25% 25% 25%;
         margin: 20px auto;
+        h3{
+            font-size: 16px;
+            font-weight: 400;
+        }
     }
     &__wrapper{
         margin: 20px auto;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 10% 32% 56% 10%;
+        grid-template-rows: 10% 32% 56% 12%;
         &--title{
             grid-area: 1/1;
             text-align: center;
@@ -154,26 +160,35 @@
         &--para{
             grid-area: 3/1;
             font-size: 14px;
-            line-height: 1.4em;
+            line-height: 1.8em;
             width: 90%;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 32px;
+            text-align: justify;
+            span{
+                color: $secondary;
+                font-weight: 600;
+                text-align: center;
+            }
         }
     }
     &__more{
-        grid-area: 4/1;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
+        margin-left: 5%;
+        margin-top: auto;
     }
     &__link{
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 500;
+        color: $primary;
+        text-decoration: none;
+        border-bottom: 2px solid $primary;   
     }
-    &__arrow{
-        font-size: 16px;
-        font-weight: 600;
+    &__link:hover{
+        color: $color-white;
+        background-color: $primary;
     }
+
     .idea,.business,.scientifics{
         display: none;
     }
@@ -196,6 +211,12 @@
         text-align: center;
         padding-bottom: 10px;
     }
+}
+.active{
+    font-size: 16px;
+    font-weight: 500;
+    color: $secondary-variant;
+    text-decoration: underline;
 }
 }
 
@@ -262,6 +283,7 @@
         font-size: 16px;
         color: $primary;
         text-decoration: none;
+        font-weight: 600;
 
     }
     &__link:hover{
