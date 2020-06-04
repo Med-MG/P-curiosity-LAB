@@ -9,6 +9,7 @@ const rural = document.querySelector('.rural')
 const idea = document.querySelector('.idea')
 const business = document.querySelector('.business')
 const sci = document.querySelector('.scientifics')
+const animateBox = document.querySelector('.animation')
 
 //* ::::::::::::::::: DOM ::::::::::::::
 
@@ -62,3 +63,5 @@ function fSci(){
     btnIdea.classList.remove('active')
     btnRural.classList.remove('active')
 }
+
+
