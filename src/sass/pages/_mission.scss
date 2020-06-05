@@ -69,44 +69,57 @@
 @media (min-width: 320px) and (max-width: 480px){
 .mission{
     &__title{
+        color: $opacity;
         margin: 0px 64px;
-        font-size: 48px;
+        font-size: 56px;
     }
     &__wrapper{
         display: grid;
         grid-template-columns: 20% 80%;
-        grid-template-rows: 20% 20% 20%;
+        grid-template-rows: 28% max-content 20%;
     }
     &__bg{
-        width: 154px;
-        margin-left: -51px;
-        margin-top: 10px;
+        width: 145px;
+        margin-left: -53px;
+        margin-top: 24px;
         grid-area: 1/1;
     }
     &__subtitle{
+        color: $primary;
         grid-area: 1/2;
         font-size: 16px;
         width: 100%;
         border-left: 4px solid $primary;
         padding-left: 8px;
-        height: 72%;
+        height: 80%;
     }
     &__para{
+        text-align: justify;
+        font-family: Nunito,sans-serif;
+        grid-area: 2/2;
         margin-top: 0px;
         margin-left: 12px;
-        margin-bottom: 16px;
         width: 90%;
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 400;
         padding-right: 8px;
         line-height: 1.4em;
     }
     &__more{
+        grid-area: 3/2;
         margin-left: 12px;
-        margin-top: 20px;
     }
-    &__link,&__arrow{
+    &__link{
         font-size: 16px;
+        font-weight: 500;
+        color: $primary;
+        text-decoration: none;
+        border-bottom: 2px solid $primary; 
         margin-left: 0px;
+    }
+    &__link:hover{
+        color: $color-white;
+        background-color: $primary;
     }
 }
 }
