@@ -96,7 +96,9 @@
 }
 
 
-// Desktop Version 
+// Desktop Version  END
+
+//  Mobile Version
 @media (min-width: 320px) and (max-width: 480px){
     .events{
         display: none;
@@ -106,8 +108,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom left;
-        height: 80vh;
-        padding: 4rem;
+        height: auto;
+        padding: 8rem 4rem;
         
     
         &__nav {
@@ -189,13 +191,125 @@
         // &__video {
         //     width: $videoratio;
         //     // height: calc((#{$videoratio} / 16rem)*9);
-        //     @include videoratio(70rem);
-        //     // @include responsive(tab-port) {
-        //     //     @include videoratio(50rem);
-        //     // }
+        //     // @include videoratio(70rem);
+        //     // // @include responsive(tab-port) {
+        //     // //     @include videoratio(50rem);
+        //     // // }
         //     @include responsive(phone) {
         //     @include videoratio(40rem);
         //     }
         // }
     }
     }
+// Mobile Version END
+
+@media (min-width: 600px)and (max-width: 1024px){
+    .events{
+        display: none;
+    }
+    .hero-header {
+        background-image: url('../images/bg-Heroheader.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom left;
+        height: auto;
+        padding: 8rem 4rem;
+        
+    
+        &__nav {
+            display: flex;
+            justify-content: space-between;
+    
+            .logo-box {
+                &__img {
+                    width: 15rem;
+                }
+            }
+    
+            // .hamburger {}
+        }
+    
+        &__main {
+            // display: grid;
+            // grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            width: 100%;
+            margin-top: 8rem;
+            text-align: center;
+
+            // @include responsive(tab-port) {
+            //     justify-content: center;
+            //     text-align: center;
+            // }
+    
+            &-text {
+                font-family: 'Nunito', sans-serif;
+                color: white;
+                margin: auto;
+            
+                .heading {
+                    font-size: 4.3rem;
+                    line-height: 1.3;
+                    font-weight: 600;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 90%;
+                    // width: 62rem;
+                    // @include responsive(tab-land) {
+                    //     width: 100%;
+                    //     display: inline-block;
+                    // }
+                }
+    
+                .sub-heading {
+                    color: #DDE4EE;
+                    font-size: 3.5rem;
+                    font-weight: 600;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 20px;
+                    width: 72%;
+                    // @include responsive(tab-land) {
+                    //     width: 100%;
+                    //     display: inline-block;
+                    // }
+                    // @include responsive(tab-port) {
+                    //     margin: 2rem 0;
+                    // }
+                }
+            }
+    
+        }
+        .video-mask{
+            margin: auto;
+            // width: $videoratio;
+            // height: calc((#{$videoratio} / 16rem)*9);
+            // @include videoratio(70rem);
+            // @include responsive(tab-port) {
+            //     @include videoratio(50rem);
+            // }
+            // @include responsive(phone) {
+            // @include videoratio(40rem);
+            // }
+            border-radius: 10px; 
+            overflow: hidden;
+            box-shadow: 0 19px 51px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
+        }
+        // &__video {
+        //     width: $videoratio;
+        //     // height: calc((#{$videoratio} / 16rem)*9);
+        //     // @include videoratio(70rem);
+        //     // // @include responsive(tab-port) {
+        //     // //     @include videoratio(50rem);
+        //     // // }
+        //     @include responsive(phone) {
+        //     @include videoratio(40rem);
+        //     }
+        // }
+    }
+    }
+
+    
+    // Tablette Version END
