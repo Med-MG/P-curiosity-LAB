@@ -1,12 +1,14 @@
 // Desktop Version 
+@media (min-width: 1025px) and (max-width: 1440px){
 .mission{
     margin-left: auto;
     margin-right: auto;
     &__title{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 250px;
         font-size: 120px;
         color: $opacity;
-        text-align: left;
-        margin-left: 250px;
     }
     &__subtitle{
         width: 82%;
@@ -17,30 +19,29 @@
         line-height: 1.4em;
         grid-column: 2/3;
         grid-row: 1/2;
+        text-align: justify;
     }
     &__para{
-        width: 72%;
-        font-size: 19px;
+        width: 80%;
+        font-size: 22px;
         font-weight: 400;
         color: $primary-variant;
         grid-column: 2/3;
         grid-row: 2/3;
         margin-top: 24px;
         margin-left: 24px;
-    }
-    &__arrow{
-        font-size: 24px;
-        margin-left: 24px;
-        cursor: pointer;
-        color: $primary;
-        font-size: 32px;
-        text-decoration: none;
+        text-align: justify;
+
     }
     &__link{
         color: $primary;
-        font-size: 32px;
+        font-size: 24px;
         text-decoration: none;
         border-bottom: 2px solid $primary;
+    }
+    &__link:hover{
+        color: $color-white;
+        background-color: $primary;
     }
     &__bg{
     width: 556px;
@@ -61,11 +62,11 @@
         grid-template-rows: 20% 20% 20%;
     }
 }
-
+}
 // Desktop Version END
 
 // Mobile Version 
-@media only screen and (max-width: 575px){
+@media (min-width: 320px) and (max-width: 480px){
 .mission{
     &__title{
         margin: 0px 64px;
@@ -114,7 +115,7 @@
 
 
 // Tablette Version 
-@media (min-width: 575px)and(max-width: 1024px){
+@media (min-width: 600px)and (max-width: 1024px){
     .mission{
         &__title{
             margin: 0px 80px;
@@ -125,7 +126,7 @@
             font-size: 32px;
         }
         &__bg{
-            width: 158%;
+            width: 58%;
             margin-left: -72px;
             margin-top: 0;
             grid-area: 1/1;
