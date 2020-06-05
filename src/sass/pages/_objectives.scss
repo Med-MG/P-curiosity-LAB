@@ -37,7 +37,8 @@
         margin-bottom: 20px;
     }
     &__para{
-        font-size: 16px;
+        font-family: Nunito,sans-serif;
+        font-size: 2rem;
         text-align: center;
         width: 72%;
         margin-left: auto;
@@ -51,26 +52,53 @@
 // Desktop Version END
 
 // Mobile Version
-@media only screen and (max-width: 575px){
+@media (min-width: 320px) and (max-width: 480px){
     .objectives{
-        margin-top: -104px;
+        margin-top: -40px;
+        background-color: $background;
+        &__title{
+            text-align: center;
+            color: $primary;
+            font-size: 32px;
+            font-weight: 500;
+            padding-top: 40px;
+        }
         &__wrapper{
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows: 33% 33% 33%;
-            margin: 40px auto 0px;
-            padding-bottom: 8px;
-        }
-        &__title{
-            font-size: 32px;
+            grid-template-rows: max-content max-content max-content;
+            margin: 40px auto ;
+            padding-bottom:24px;
         }
         &__wrapper1{
-            margin-bottom: 120px;
+            margin: 20px auto;
+        }
+        &__wrapper2{
+            margin: 20px auto;
+        }
+        &__wrapper3{
+            margin: 20px auto;
         }
     }
+    
     .wrapper{
         &__icon1,&__icon2,&__icon3{
-            width: 12%;
+            width: 8vh;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 20px;
+        }
+        &__para{
+            font-family: Nunito,sans-serif;
+            font-size: 16px;
+            text-align: center;
+            width: 72%;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 600;
+            color: $primary-variant;
+            grid-row: 2/3;
         }
     }
 }
@@ -78,13 +106,56 @@
 // Mobile Version END
 
 // Tablette Version 
-@media (min-width: 575px)and(max-width: 1024px){
+@media (min-width: 600px)and (max-width: 1024px){
+    .objectives{
+        margin-top: -120px;
+        background-color: $background;
+        &__title{
+            text-align: center;
+            color: $primary;
+            font-size: 32px;
+            font-weight: 500;
+            padding-top: 40px;
+        }
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 50% 50%;
+            max-width: 1200px;
+            margin: 80px auto;
+            padding-bottom: 80px;
+        }
+        &__wrapper1{
+            margin: auto;
+        }
+        &__wrapper2{
+            margin: auto;
+        }
+        &__wrapper3{
+            margin: auto;
+        }
+    }
+    
     .wrapper{
         &__icon1,&__icon2,&__icon3{
-            width: 120px;
-            height: 144px;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 20px;
+            width: 10vh;
+            height: 12vh;
+        }
+        &__para{
+            font-family: Nunito,sans-serif;
+            font-size: 16px;
+            text-align: center;
+            width: 72%;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 500;
+            color: $primary-variant;
+            grid-row: 2/3;
         }
     }
 }
-
 // Tablette Version END
