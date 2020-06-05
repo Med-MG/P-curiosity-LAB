@@ -131,24 +131,57 @@
 @media (min-width: 600px)and (max-width: 1024px){
     .mission{
         &__title{
-            margin: 0px 80px;
-          }
-        &__subtitle{
-            line-height: 1.4em;
-            width: 100%;
-            font-size: 32px;
+            color: $opacity;
+            margin: 0px 14%;
+            font-size: 12rem;
+        }
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-template-rows: 28% max-content 20%;
         }
         &__bg{
-            width: 58%;
-            margin-left: -72px;
-            margin-top: 0;
+            width: 28vh;
+            margin-left: -60%;
+            margin-top: -6%;
             grid-area: 1/1;
         }
+        &__subtitle{
+            color: $primary;
+            grid-area: 1/2;
+            font-size: 3rem;
+            width: 100%;
+            border-left: 4px solid $primary;
+            padding-left: 8px;
+            height: 80%;
+        }
         &__para{
+            text-align: justify;
+            font-family: Nunito,sans-serif;
+            grid-area: 2/2;
+            margin-left: 12px;
             width: 90%;
+            font-size: 2.6rem;
+            font-weight: 400;
+            padding-right: 8px;
+            line-height: 1.4em;
+            margin-bottom: 20px;
         }
         &__more{
-            margin-top: 24px;
+            grid-area: 3/2;
+            margin-left: 12px;
+        }
+        &__link{
+            font-size: 24px;
+            font-weight: 500;
+            color: $primary;
+            text-decoration: none;
+            border-bottom: 2px solid $primary; 
+            margin-left: 0px;
+        }
+        &__link:hover{
+            color: $color-white;
+            background-color: $primary;
         }
     }
 }
