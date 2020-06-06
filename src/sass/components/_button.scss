@@ -1,3 +1,4 @@
+@media (min-width: 1200px){
 .getStarted{
     &__btn{
         border: none;
@@ -5,7 +6,8 @@
         background-color: $secondary;
         color: $color-white;
         padding: 24px 144px;
-        font-size: 16px;
+        font-size: 24px;
+        font-weight: 500;
         box-shadow: $default-shadow;
         margin-bottom: 80px;
         cursor: pointer;
@@ -26,16 +28,53 @@
         cursor: pointer;
         }
 }
+}
 
-@media only screen and (max-width: 575px){
+@media (min-width: 320px) and (max-width: 480px){
     .getStarted{
         &__btn{
-            padding: 24px 120px; 
-            margin-bottom: 40px;         
+            border-radius: 8px;
+            display: block;
+            padding: 24px 120px;  
+            margin-top: 24px;
+            margin-bottom: 56px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 72%;
+            border: none;
+            padding: 16px;
+            background-color: $secondary;
+            color: $color-white;
+            box-shadow: $default-shadow;
+            font-weight: 500;
+            font-size: 24px;
+            cursor: pointer;      
         }
     }
 }
 
+@media (min-width: 600px)and (max-width: 1024px){
+    .getStarted{
+        &__btn{
+            border-radius: 8px;
+            display: block;
+            padding: 24px 120px;  
+            margin-top: 24px;
+            margin-bottom: 56px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            border: none;
+            padding: 16px;
+            background-color: $secondary;
+            color: $color-white;
+            box-shadow: $default-shadow;
+            font-weight: 500;
+            font-size: 24px;
+            cursor: pointer;      
+        }
+    }
+}
 
 .btn {
     &,
