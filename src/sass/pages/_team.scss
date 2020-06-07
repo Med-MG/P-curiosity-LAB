@@ -1,25 +1,25 @@
 // Desktop Version 
-
+@media (min-width: 1200px){
 .team {
     background-image: url("../images/bg-offer.png");
     position: relative;
+    background-size: cover;
+    background-repeat: round;
     text-align: center;
     &__grid {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: 50% 50%;
-        max-width: 1200px;
+        max-width: 80%;
         margin-left: auto;
         margin-right: auto;
-
-
       }
       &__block {
         width: 80%;
-        margin-bottom: 40px;
+        margin: 24px auto;
+        display: block;
       }
       &__title {
-        max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
         font-size: 120px;
@@ -28,14 +28,18 @@
         margin-left: 250px;
       }
       &__subtitle{
-        max-width: 1200px;
-          margin-left: auto;
-          margin-right: auto;
-          width: 55%;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 100%;
+        h3{
+          grid-column: 2/3;
+          grid-row: 1/2;
+          width: 804px;
           font-size: 40px;
           color: $primary;
           margin-bottom: 56px;
           border-left: 8px solid $primary;
+        }
       }
   }
   
@@ -75,7 +79,7 @@
   .team__block .team__box .box__image .social-links li a {
     position: relative;
     display: inline-block;
-    font-size: 16px;
+    font-size: 24px;
     color: $color-white;
   }
   
@@ -117,7 +121,7 @@
     font-weight: 500;
     color: $secondary;
   }
-
+}
 // Desktop Version END
 
 // Mobile Version 
