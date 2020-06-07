@@ -1,13 +1,12 @@
 // Desktop Version 
-@media (min-width: 1025px) and (max-width: 1440px){
+@media (min-width: 1200px){
 .hero-header {
     background-image: url('../images/bg-Heroheader.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom left;
-    height: 120vh;
-    padding: 10rem;
-    
+    height: max-content;
+    padding: 10rem 10rem 16rem;    
 
     &__nav {
         display: flex;
