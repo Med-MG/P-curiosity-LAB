@@ -1,236 +1,61 @@
 // Desktop Version 
-.work{
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    &__title{
-        text-align: center;
-        color: $primary;
-        font-size: 4rem;
-        font-weight: 500;
-        margin-bottom: 4rem;
-    }
-    &__wrapper{
-        display: grid;
-        grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
-        grid-template-rows: 33% 34% 33%;
-    }
-}
-
-.wrapper{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    &__img{
-        margin-left: auto;
-        margin-right: auto;
+@media (min-width: 1200px){
+    .work{
+        &__title{
+            font-size: 40px;
+            font-weight: 500;
+            color: $primary;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    img{
         display: block;
-        grid-column: 1/3;
-        grid-row: 1/3;
-        width: 1200px;
-    }
-    &__img img{
-    width: 920px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    display: block;
-    }
-    &__para1{
-        border: 1px solid $color-black;
-        border-radius: 50%;
-        color: $color-orchid;
-        font-size: 13px;
-        height: max-content;
-        text-align: center;
-        padding: 24px;
-        margin-top: 40px;
-        grid-area: 3/1;
-        grid-column: 2/4;
-        width: 56%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 80px;
+        width: 64%;
     }
-    &__para2{
-        border: 1px solid $color-black;
-        border-radius: 50%;
-        color: $color-orchid;
-        font-size: 13px;
-        height: max-content;
-        text-align: center;
-        padding: 24px;
-        grid-area: 1/3;
-        grid-column: 3/5;
-        width: 56%;
-        margin-left: 126px;
-
-
-    }
-    &__para3{
-        border: 1px solid $color-black;
-        border-radius: 50%;
-        color: $color-orchid;
-        font-size: 13px;
-        height: max-content;
-        text-align: center;
-        padding: 32px;
-        grid-area: 3/5;
-        margin-top: -110px;
     }
 }
 
-// Desktop Version END
+// Mobile Version
 
-// Mobile Version 
-@media only screen and (max-width: 575px){
-
+@media (min-width: 320px) and (max-width: 480px){
     .work{
         &__title{
             font-size: 32px;
-            margin-top: 40px;
+            font-weight: 500;
+            color: $primary;
+            text-align: center;
+            margin-bottom: 40px;
         }
-        &__wrapper{
-            display: grid;
-            grid-template-columns: 33% 34% 33%;
-            grid-template-rows: 50% 50%;
-        }
+    img{
+        width: 88%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .wrapper{
-        &__img{
-            width: 90%;
-            grid-column: 1/4;
-            margin-top: 48px;
-        }
-        &__img img{
-            width: 100%;
-        }
-        &__para1{
-            grid-area: 2/1;
-            width: 100%;
-            font-size: 8px;
-            margin-left: 32px;
-            border-radius: 32%;
-            margin-top: 110px;
-        }
-        &__para2{
-            grid-area: 1/2;
-            width: 100%;
-            font-size: 8px;
-            margin-left: 20px;
-            margin-top: -10px;
-            border-radius: 32%;
-            padding: 24px;
-           
-        }
-        &__para3{
-            grid-area: 2/3;
-            width: 100%;
-            font-size: 8px;
-            margin-top: 40px;
-            margin-left: -10px;
-            padding: 12px;
-            border-radius: 32%;
-        }
     }
 }
 
-// Mobile Version END
 
-// Tablette Version 
+//Tablette Version
 
-// @media(min-width: 768px){
-//     .work{
-//         &__wrapper{
-//             display: grid;
-//             grid-template-columns: 33% 34% 33%;
-//             grid-template-rows: 50% 50%;
-//             margin-top: 120px;
-//         }
-//     }
-//     .wrapper{
-//         &__img img{
-//             width: 90%;
-//         }
-//         &__img{
-//             grid-column: 1/4;
-//             width: 90%;
-//         }
-//         &__para1{
-//             grid-area: 2/1;
-//             width: 80%;
-//             font-size: 16px;
-//             margin-left: auto;
-//             margin-right: auto;
-//             margin-top: 148px;
-//             padding: 32px;
-//         }
-//         &__para2{
-//             grid-area: 1/2;
-//             width: 80%;
-//             font-size: 16px;
-//             margin-left: 40px;
-//             margin-top: -104px;
-//             border-radius: 50%;
-//             padding: 32px;
-           
-//         }
-//         &__para3{
-//             grid-area: 2/3;
-//             width: 100%;
-//             font-size: 16px;
-//             margin-top: 40px;
-//             margin-left: -40px;
-//             padding: 32px;
-//             border-radius: 50%;
-//         }
-//     }
-//     }
-@media (min-width: 768px) and (max-width: 1024px){
+
+@media (min-width: 600px)and (max-width: 1024px){
     .work{
-        &__wrapper{
-            display: grid;
-            grid-template-columns: 33% 34% 33%;
-            grid-template-rows: 50% 50%;
-            margin-top: 120px;
+        &__title{
+            font-size: 32px;
+            font-weight: 500;
+            color: $primary;
+            text-align: center;
+            margin-bottom: 40px;
         }
+    img{
+        width: 88%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .wrapper{
-        &__img img{
-            width: 90%;
-        }
-        &__img{
-            grid-column: 1/4;
-            width: 90%;
-        }
-        &__para1{
-            grid-area: 2/1;
-            width: 80%;
-            font-size: 16px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 230px;
-            padding: 32px;
-        }
-        &__para2{
-            grid-area: 1/2;
-            width: 80%;
-            font-size: 16px;
-            margin-left: 64px;
-            margin-top: -64px;
-            border-radius: 50%;
-            padding: 32px;
-           
-        }
-        &__para3{
-            grid-area: 2/3;
-            width: 100%;
-            font-size: 16px;
-            margin-top: 92px;
-            margin-left: -80px;
-            padding: 32px;
-            border-radius: 50%;
-        }
     }
 }
-
-// Tablette Version END
