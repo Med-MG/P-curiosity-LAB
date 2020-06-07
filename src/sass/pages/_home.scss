@@ -99,9 +99,7 @@
 
 //  Mobile Version
 @media (min-width: 320px) and (max-width: 480px){
-    .events{
-        display: none;
-    }
+
     .hero-header {
         background-image: url('../images/bg-Heroheader.png');
         background-repeat: no-repeat;
@@ -203,9 +201,7 @@
 // Mobile Version END
 
 @media (min-width: 600px)and (max-width: 1024px){
-    .events{
-        display: none;
-    }
+
     .hero-header {
         background-image: url('../images/bg-Heroheader.png');
         background-repeat: no-repeat;
