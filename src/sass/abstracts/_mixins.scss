@@ -60,16 +60,27 @@ for media queries 1em = 16px
 */
 @mixin responsive($breakpoint) {
 
+    @if $breakpoint == iphone-1 {
+        @media screen and (max-width: 20em) { @content }; //320px
+     }
+
     @if $breakpoint == iphone {
         @media screen and (max-width: 23.44em) { @content }; //375px
      }
      
+    @if $breakpoint == phone-1 {
+        @media screen and (max-width: 30em) { @content }; //480px
+    }
     @if $breakpoint == phone {
         @media screen and (max-width: 37.5em) { @content }; //600px
     }
     
     @if $breakpoint == tab-port {
         @media screen and (max-width: 56.25em) { @content }; //900px
+    }
+
+    @if $breakpoint == tab-land-1 {
+        @media screen and (max-width: 64em) { @content }; //1024px
     }
 
     @if $breakpoint == tab-land {
@@ -84,3 +95,7 @@ for media queries 1em = 16px
         @media screen and (min-width: 112.5em) { @content }; //1800px
     }
 }
+
+// @media (min-width: 1200px)
+// @media (min-width: 320px) and (max-width: 480px)
+// @media (min-width: 600px)and (max-width: 1024px)
