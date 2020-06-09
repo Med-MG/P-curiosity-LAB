@@ -1,25 +1,25 @@
 // Desktop Version 
-
+@media (min-width: 1200px){
 .team {
     background-image: url("../images/bg-offer.png");
     position: relative;
+    background-size: cover;
+    background-repeat: round;
     text-align: center;
     &__grid {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: 50% 50%;
-        max-width: 1200px;
+        max-width: 80%;
         margin-left: auto;
         margin-right: auto;
-
-
       }
       &__block {
         width: 80%;
-        margin-bottom: 40px;
+        margin: 24px auto;
+        display: block;
       }
       &__title {
-        max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
         font-size: 120px;
@@ -28,14 +28,18 @@
         margin-left: 250px;
       }
       &__subtitle{
-        max-width: 1200px;
-          margin-left: auto;
-          margin-right: auto;
-          width: 55%;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 100%;
+        h3{
+          grid-column: 2/3;
+          grid-row: 1/2;
+          width: 804px;
           font-size: 40px;
           color: $primary;
           margin-bottom: 56px;
           border-left: 8px solid $primary;
+        }
       }
   }
   
@@ -75,7 +79,7 @@
   .team__block .team__box .box__image .social-links li a {
     position: relative;
     display: inline-block;
-    font-size: 16px;
+    font-size: 24px;
     color: $color-white;
   }
   
@@ -117,20 +121,30 @@
     font-weight: 500;
     color: $secondary;
   }
-
+}
 // Desktop Version END
 
 // Mobile Version 
-  @media only screen and (max-width: 575px){
+@media (min-width: 320px) and (max-width: 480px){
     .team{
+      background-image: url("../images/bg-offer.png");
+      position: relative;
+      background-size: cover;
+      background-repeat: space;
+
       &__grid{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
       }
       &__title{
-        margin: 0px 48px;
-        font-size: 80px;
+        color: $opacity;
+        margin: 0px 64px;
+        font-size: 56px;
       }
       &__subtitle{
         line-height: 1.4em;
@@ -138,9 +152,108 @@
         width: 80%;
       }
       &__block{
+        width: 72%;
+        margin: 24px auto;
+        display: block;
         margin-left: auto;
         margin-right: auto;
       }
+      &__subtitle{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 24px;
+        width: 100%;
+        h3{
+          grid-column: 2/3;
+          grid-row: 1/2;
+          width: 97%;
+          font-size: 16px;
+          color: $primary;
+          border-left: 4px solid $primary;
+          padding-left: 8px;
+        }
+      }
+    }
+    .team__block .team__box .box__image {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      background: $secondary;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%, 0% 0%);
+    }
+    
+  .box__image .social-links {
+      position: absolute;
+      left:-40px;
+      top: 15px;
+      opacity: 0;
+      transition: all 500ms ease;
+    }
+    
+    .team__block:hover .team__box .box__image .social-links {
+      left: 20px;
+      opacity: 1;
+    }
+    
+    .team__block .team__box .box__image .social-links li {
+      position: relative;
+      display: block;
+      margin-bottom: 16px;
+    }
+    
+    .team__block .team__box .box__image .social-links li:last-child {
+      margin-bottom: 0;
+    }
+    
+    .team__block .team__box .box__image .social-links li a {
+      position: relative;
+      display: inline-block;
+      font-size: 16px;
+      color: $color-white;
+    }
+    
+    .team__block .team__box .box__image img {
+      width: 100%;
+      transition: all 500ms ease;
+      vertical-align: middle;
+      border-style: none;
+    }
+    
+    .team__block .team__box:hover .box__image img {
+      opacity: 0.2;
+    }
+    
+    .team__block .team__box .team__infos {
+      display: block;
+      background-color: $color-white;
+      border: 0.5px solid $color-black;
+      padding: 32px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -72px;
+    }
+    
+    .team__block .team__box .team__infos h5 {
+      position: relative;
+      display: block;
+      font-size: 18px;
+      line-height: 28px;
+      color: $color_black;
+      font-weight: 600;
+      margin: 48px 0px 16px;
+    }
+    
+    .team__block .team__box .team__infos .post {
+      position: relative;
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      color: $secondary;
     }
   }
 
@@ -148,22 +261,123 @@
 
 
 // Tablette Version 
-  @media (min-width: 575px)and(max-width: 1024px){
-
-
+@media (min-width: 600px)and (max-width: 1024px){
     .team{
+      background-image: url("../images/bg-offer.png");
+      position: relative;
+      background-size: cover;
+      background-repeat: round;
       &__title{
-        margin: 0px 80px;
+        font-size: 96px;
+        color: $opacity;
+        margin: 0px 16%;
       }
       &__subtitle{
-        line-height: 1.4em;
-        width: 78%;
-        margin-left: 120px;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: max-content;
+        margin-bottom: 40px;
+        h3{
+          grid-column: 2/3;
+          grid-row: 1/2;
+          font-size: 24px;
+          color: $primary;
+          border-left: 4px solid $primary;
+          padding-left: 8px;
+        }
       }
       &__block{
+        width: 72%;
+        margin: 24px auto;
+        display: block;
+      }
+      &__grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 25% 25% 25%;
+        max-width: 80%;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
       }
+    }
+    .team__block .team__box .box__image {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      background: $secondary;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%, 0% 0%);
+    }
+    
+  .box__image .social-links {
+      position: absolute;
+      left:-40px;
+      top: 15px;
+      opacity: 0;
+      transition: all 500ms ease;
+    }
+    
+    .team__block:hover .team__box .box__image .social-links {
+      left: 20px;
+      opacity: 1;
+    }
+    
+    .team__block .team__box .box__image .social-links li {
+      position: relative;
+      display: block;
+      margin-bottom: 16px;
+    }
+    
+    .team__block .team__box .box__image .social-links li:last-child {
+      margin-bottom: 0;
+    }
+    
+    .team__block .team__box .box__image .social-links li a {
+      position: relative;
+      display: inline-block;
+      font-size: 16px;
+      color: $color-white;
+    }
+    
+    .team__block .team__box .box__image img {
+      width: 100%;
+      transition: all 500ms ease;
+      vertical-align: middle;
+      border-style: none;
+    }
+    
+    .team__block .team__box:hover .box__image img {
+      opacity: 0.2;
+    }
+    
+    .team__block .team__box .team__infos {
+      display: block;
+      background-color: $color-white;
+      border: 0.5px solid $color-black;
+      padding: 32px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -72px;
+    }
+    
+    .team__block .team__box .team__infos h5 {
+      position: relative;
+      display: block;
+      font-size: 18px;
+      line-height: 28px;
+      color: $color_black;
+      font-weight: 600;
+      margin: 48px 0px 16px;
+    }
+    
+    .team__block .team__box .team__infos .post {
+      position: relative;
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      color: $secondary;
     }
   }
 // Tablette Version END

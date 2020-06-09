@@ -1,13 +1,12 @@
 // Desktop Version 
-@media (min-width: 1025px) and (max-width: 1440px){
+@media (min-width: 1200px){
 .hero-header {
     background-image: url('../images/bg-Heroheader.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom left;
-    height: 120vh;
-    padding: 10rem;
-    
+    height: max-content;
+    padding: 10rem 10rem 16rem;    
 
     &__nav {
         display: flex;
@@ -100,9 +99,7 @@
 
 //  Mobile Version
 @media (min-width: 320px) and (max-width: 480px){
-    .events{
-        display: none;
-    }
+
     .hero-header {
         background-image: url('../images/bg-Heroheader.png');
         background-repeat: no-repeat;
@@ -204,9 +201,7 @@
 // Mobile Version END
 
 @media (min-width: 600px)and (max-width: 1024px){
-    .events{
-        display: none;
-    }
+
     .hero-header {
         background-image: url('../images/bg-Heroheader.png');
         background-repeat: no-repeat;
