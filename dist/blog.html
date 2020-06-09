@@ -20,14 +20,16 @@
   
 <nav class="navigation-alt  ">
     <div class="navigation-alt__logo-box">
-        <img src="images/logo.png" alt="" class="navigation-alt__logo">
+        <a href="index.html">
+            <img src="images/logo.png" alt="logo" class="navigation-alt__logo">
+        </a>
     </div>
     <ul class="navigation-alt__list">
-        <li class="navigation-alt__item">Home</li>
-        <li class="navigation-alt__item">Learning center</li>
-        <li class="navigation-alt__item">Blog</li>
-        <li class="navigation-alt__item">Events</li>
-        <li class="navigation-alt__item">Reports</li>
+        <li class="navigation-alt__item"><a href="index.html" class="navigation-alt__link">Home</a></li>
+        <li class="navigation-alt__item"><a href="#" class="navigation-alt__link">Learning center</a></li>
+        <li class="navigation-alt__item"><a href="blog.html" class="navigation-alt__link">Blog</a></li>
+        <li class="navigation-alt__item"><a href="#" class="navigation-alt__link">Events</a></li>
+        <li class="navigation-alt__item"><a href="#" class="navigation-alt__link">Reports</a></li>
     </ul>
     <div class="navigation-alt__subscribe">
         <img src="images/search.svg" class="navigation-alt__search-icon" alt="search button">
@@ -37,8 +39,26 @@
         </form>
     </div>
 
-
     <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button" id="top-alt">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background" id="top-alt-bg">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="index.html" class="navigation__link"><span>01</span>Home &nbsp; &nbsp;</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>learning center</a></li>
+                <li class="navigation__item"><a href="blog.html" class="navigation__link"><span>02</span>Blog &nbsp; &nbsp;</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Events &nbsp; &nbsp;</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Reports</a></li>
+                </ul>
+        </nav>
+    </div>
+    <!-- <div class="navigation">
         <button class="hamburger hamburger--emphatic navigation__button" type="button">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
@@ -53,7 +73,7 @@
               <li class="navigation__menu-list-item"><a href="">Reports</a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
 
 </nav>
 <div class="container">

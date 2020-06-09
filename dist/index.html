@@ -21,10 +21,30 @@
 <header class="hero-header">
   <nav class="hero-header__nav">
     <div class="logo-box">
-      <img src="images/Logo-white.png" alt="" class="logo-box__img" />
+      <a href="index.html">
+      <img src="images/Logo-white.png" alt="logo" class="logo-box__img" />
+    </a>
     </div>
-    
-    <div class="navigation">
+    <div class="navigation" >
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+      <label for="navi-toggle" class="navigation__button" id="top-home">
+          <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background" id="top-home-bg">&nbsp;</div>
+
+      <nav class="navigation__nav">
+          <ul class="navigation__list">
+              <li class="navigation__item"><a href="index.html" class="navigation__link"><span>01</span>Home &nbsp; &nbsp;</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Learning center</a></li>
+              <li class="navigation__item"><a href="blog.html" class="navigation__link"><span>03</span>Blog &nbsp; &nbsp;</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Events &nbsp; &nbsp;</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Programmes</a></li>
+              </ul>
+      </nav>
+  </div>
+    <!-- <div class="navigation">
       <button class="hamburger hamburger--emphatic navigation__button" type="button">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
@@ -40,7 +60,7 @@
             <li class="navigation__menu-list-item"><a href="">PRICING</a></li>
         </ul>
       </div>
-    </div>
+    </div> -->
   </nav>
 
   <div class="hero-header__main">
