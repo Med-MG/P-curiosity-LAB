@@ -1,0 +1,28 @@
+.navigation-alt {
+    padding: 5rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    &__logo-box{}
+    &__logo{
+        width: 15rem;
+    }
+    &__list{
+        list-style: none;
+        display: flex;
+        font-size: 1.9rem;
+        color: $primary-variant;
+        font-weight: 300;
+        align-items: center;
+        justify-content: center;
+    }
+    &__item{
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+    &__subscribe{}
+    &__search{}
+    &__search-icon{}
+    &__subscribe-form{}
+    &__subscribe-input{}
+}
