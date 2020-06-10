@@ -28,6 +28,7 @@
   }
 
   &.is-active {
+    position: fixed;
     &:hover {
       @if $hamburger-hover-use-filter == true {
         filter: $hamburger-active-hover-filter;

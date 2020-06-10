@@ -38,3 +38,11 @@
 a {
     text-decoration: none !important;
 }
+
+
+.d-mobile {
+    display: none !important;
+    @include responsive(tab-land) {
+        display: block !important;
+    }
+}

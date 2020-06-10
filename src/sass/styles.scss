@@ -8,11 +8,13 @@
 @import "base/utilities";
 
 @import "components/button";
-@import "components/hamburgers/hamburgers.scss";
+@import "components/nav-alt";
+@import "components/hamburgers/hamburgers";
 
 @import "layouts/navigation";
 @import "layouts/header";
 @import "layouts/footer";
+@import "layouts/navigation-blog";
 
 
 

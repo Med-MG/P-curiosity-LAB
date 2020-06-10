@@ -1,0 +1,112 @@
+.navigation-alt {
+    padding: 5rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Nunito', 'Poppins', sans-serif;
+    font-size: 1.6rem;
+
+    @include responsive(small-desktop) {
+        justify-items: start;
+        padding: 5rem;
+    }
+
+    @include responsive(tab-land) {
+        grid-template-columns: 1fr 2fr;
+
+    }
+
+    // &__logo-box{}
+    &__logo {
+        width: 15rem;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include responsive(tab-land) {
+            display: none;
+        }
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            font-weight: 400;
+            color: $primary-variant;
+            text-decoration: none;
+            transition: all .4s;
+            cursor: pointer;
+
+        }
+    }
+
+    &__item {
+        position: relative;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 0;
+            position: absolute;
+            bottom: 0;
+            border-bottom: 1px solid $secondary-variant;
+            transition: $hover;
+            z-index: 2;
+        }
+
+        &:hover {
+            &::before {
+                width: 100%;
+            }
+        }
+
+
+
+        // &:last-child{
+        //     margin-left: 5rem;
+        // }
+    }
+
+    &__subscribe {
+        position: relative;
+
+        @include responsive(phone) {
+            display: none;
+        }
+
+
+    }
+
+    &__search-icon {
+        position: absolute;
+        top: 1.5rem;
+        left: -5rem;
+        width: 2rem;
+    }
+
+    // &__subscribe-form {
+        
+    // }
+
+    &__subscribe-input {
+        height: 5rem;
+        align-self: center;
+        padding: 2rem;
+        text-transform: uppercase;
+        color: $primary-variant;
+        border: 1px solid $primary-variant;
+        border-radius: .5rem;
+    }
+}
