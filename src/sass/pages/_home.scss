@@ -1,5 +1,3 @@
-// Desktop Version 
-@media (min-width: 1200px){
 .hero-header {
     background-image: url('../images/bg-Heroheader.png');
     background-repeat: no-repeat;
@@ -22,169 +20,169 @@
     }
 
     &__main {
-        // display: grid;
-        // grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
         margin-top: 8rem;
-        // @include responsive(tab-port) {
-        //     justify-content: center;
-        //     text-align: center;
-        // }
+        @include responsive(tab-port) {
+            justify-content: center;
+            text-align: center;
+        }
 
         &-text {
             font-family: 'Nunito', sans-serif;
             color: white;
-            margin: auto;
+            // margin: auto;
         
             .heading {
-                font-size: 4.3rem;
-                line-height: 1.3;
+                font-size: 4.5rem;
+                line-height: 1.5;
                 font-weight: 600;
                 width: 62rem;
-                // @include responsive(tab-land) {
-                //     width: 100%;
-                //     display: inline-block;
-                // }
+                @include responsive(tab-land) {
+                    width: 100%;
+                    display: inline-block;
+                }
             }
 
             .sub-heading {
                 color: #DDE4EE;
-                font-size: 3.6rem;
+                font-size: 2.6rem;
                 margin: 2rem 0;
                 width: 61rem; 
-                // @include responsive(tab-land) {
-                //     width: 100%;
-                //     display: inline-block;
-                // }
-                // @include responsive(tab-port) {
-                //     margin: 2rem 0;
-                // }
+                @include responsive(tab-land) {
+                    width: 100%;
+                    display: inline-block;
+                }
+                @include responsive(tab-port) {
+                    margin: 2rem 0;
+                }
             }
         }
 
     }
     .video-mask{
-        // width: $videoratio;
-        // height: calc((#{$videoratio} / 16rem)*9);
-        // @include videoratio(70rem);
-        // @include responsive(tab-port) {
-        //     @include videoratio(50rem);
-        // }
-        // @include responsive(phone) {
-        //     @include videoratio(40rem);
-        // }
+        width: $videoratio;
+        height: calc((#{$videoratio} / 16rem)*9);
+        @include videoratio(70rem);
+        @include responsive(tab-port) {
+            @include videoratio(50rem);
+        }
+        @include responsive(phone) {
+            @include videoratio(40rem);
+        }
         border-radius: 10px; 
         overflow: hidden;
         box-shadow: 0 19px 51px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
     }
     &__video {
-        // width: $videoratio;
-        // height: calc((#{$videoratio} / 16rem)*9);
+        width: $videoratio;
+        height: calc((#{$videoratio} / 16rem)*9);
         @include videoratio(70rem);
-        // @include responsive(tab-port) {
-        //     @include videoratio(50rem);
-        // }
-        // @include responsive(phone) {
-        //     @include videoratio(40rem);
-        // }
+        @include responsive(tab-port) {
+            @include videoratio(50rem);
+        }
+        @include responsive(phone) {
+            @include videoratio(40rem);
+        }
     }
 }
-}
 
 
-// Desktop Version  END
 
-//  Mobile Version
-@media (min-width: 320px) and (max-width: 480px){
+// // Desktop Version  END
 
-    .hero-header {
-        background-image: url('../images/bg-Heroheader.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom left;
-        height: auto;
-        padding: 8rem 4rem;
+// //  Mobile Version
+// @media (min-width: 320px) and (max-width: 480px){
+
+//     .hero-header {
+//         background-image: url('../images/bg-Heroheader.png');
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         background-position: bottom left;
+//         height: auto;
+//         padding: 8rem 4rem;
         
     
-        &__nav {
-            display: flex;
-            justify-content: space-between;
+//         &__nav {
+//             display: flex;
+//             justify-content: space-between;
     
-            .logo-box {
-                &__img {
-                    width: 15rem;
-                }
-            }
+//             .logo-box {
+//                 &__img {
+//                     width: 15rem;
+//                 }
+//             }
     
-            // .hamburger {}
-        }
+//             // .hamburger {}
+//         }
     
-        &__main {
-            // display: grid;
-            // grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            width: 100%;
-            margin-top: 8rem;
-            text-align: center;
+//         &__main {
+//             // display: grid;
+//             // grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+//             display: flex;
+//             justify-content: space-between;
+//             flex-wrap: wrap;
+//             width: 100%;
+//             margin-top: 8rem;
+//             text-align: center;
 
-            // @include responsive(tab-port) {
-            //     justify-content: center;
-            //     text-align: center;
-            // }
+//             // @include responsive(tab-port) {
+//             //     justify-content: center;
+//             //     text-align: center;
+//             // }
     
-            &-text {
-                font-family: 'Nunito', sans-serif;
-                color: white;
-                margin: auto;
+//             &-text {
+//                 font-family: 'Nunito', sans-serif;
+//                 color: white;
+//                 margin: auto;
             
-                .heading {
-                    font-size: 4.3rem;
-                    line-height: 1.3;
-                    font-weight: 600;
-                    // width: 62rem;
-                    // @include responsive(tab-land) {
-                    //     width: 100%;
-                    //     display: inline-block;
-                    // }
-                }
+//                 .heading {
+//                     font-size: 4.3rem;
+//                     line-height: 1.3;
+//                     font-weight: 600;
+//                     // width: 62rem;
+//                     // @include responsive(tab-land) {
+//                     //     width: 100%;
+//                     //     display: inline-block;
+//                     // }
+//                 }
     
-                .sub-heading {
-                    color: #DDE4EE;
-                    font-size: 2.8rem;
-                    font-weight: 700;
-                    // width: 50rem; 
-                    margin: 2rem 0px;
-                    // @include responsive(tab-land) {
-                    //     width: 100%;
-                    //     display: inline-block;
-                    // }
-                    // @include responsive(tab-port) {
-                    //     margin: 2rem 0;
-                    // }
-                }
-            }
+//                 .sub-heading {
+//                     color: #DDE4EE;
+//                     font-size: 2.8rem;
+//                     font-weight: 700;
+//                     // width: 50rem; 
+//                     margin: 2rem 0px;
+//                     // @include responsive(tab-land) {
+//                     //     width: 100%;
+//                     //     display: inline-block;
+//                     // }
+//                     // @include responsive(tab-port) {
+//                     //     margin: 2rem 0;
+//                     // }
+//                 }
+//             }
     
-        }
-        .video-mask{
-            margin: auto;
-            // width: $videoratio;
-            // height: calc((#{$videoratio} / 16rem)*9);
-            // @include videoratio(70rem);
-            // @include responsive(tab-port) {
-            //     @include videoratio(50rem);
-            // }
-            @include responsive(phone) {
-            @include videoratio(40rem);
-            }
-            border-radius: 10px; 
-            overflow: hidden;
-            box-shadow: 0 19px 51px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
-        }
+//         }
+//         .video-mask{
+//             margin: auto;
+//             // width: $videoratio;
+//             // height: calc((#{$videoratio} / 16rem)*9);
+//             // @include videoratio(70rem);
+//             // @include responsive(tab-port) {
+//             //     @include videoratio(50rem);
+//             // }
+//             @include responsive(phone) {
+//             @include videoratio(40rem);
+//             }
+//             border-radius: 10px; 
+//             overflow: hidden;
+//             box-shadow: 0 19px 51px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
+//         }
         // &__video {
         //     width: $videoratio;
         //     // height: calc((#{$videoratio} / 16rem)*9);
@@ -195,116 +193,119 @@
         //     @include responsive(phone) {
         //     @include videoratio(40rem);
         //     }
-        // }
-    }
-    }
+    //     // }
+    // }
+    // }
+
+
+
 // Mobile Version END
 
-@media (min-width: 600px)and (max-width: 1024px){
+// @media (min-width: 600px)and (max-width: 1024px){
 
-    .hero-header {
-        background-image: url('../images/bg-Heroheader.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom left;
-        height: auto;
-        padding: 8rem 4rem;
+//     .hero-header {
+//         background-image: url('../images/bg-Heroheader.png');
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         background-position: bottom left;
+//         height: auto;
+//         padding: 8rem 4rem;
         
     
-        &__nav {
-            display: flex;
-            justify-content: space-between;
+//         &__nav {
+//             display: flex;
+//             justify-content: space-between;
     
-            .logo-box {
-                &__img {
-                    width: 15rem;
-                }
-            }
+//             .logo-box {
+//                 &__img {
+//                     width: 15rem;
+//                 }
+//             }
     
-            // .hamburger {}
-        }
+//             // .hamburger {}
+//         }
     
-        &__main {
-            // display: grid;
-            // grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-            width: 100%;
-            margin-top: 8rem;
-            text-align: center;
+//         &__main {
+//             // display: grid;
+//             // grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+//             display: flex;
+//             justify-content: space-between;
+//             flex-direction: row;
+//             width: 100%;
+//             margin-top: 8rem;
+//             text-align: center;
 
-            // @include responsive(tab-port) {
-            //     justify-content: center;
-            //     text-align: center;
-            // }
+//             // @include responsive(tab-port) {
+//             //     justify-content: center;
+//             //     text-align: center;
+//             // }
     
-            &-text {
-                font-family: 'Nunito', sans-serif;
-                color: white;
-                margin: auto;
+//             &-text {
+//                 font-family: 'Nunito', sans-serif;
+//                 color: white;
+//                 margin: auto;
             
-                .heading {
-                    font-size: 4.3rem;
-                    line-height: 1.3;
-                    font-weight: 600;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: 90%;
-                    // width: 62rem;
-                    // @include responsive(tab-land) {
-                    //     width: 100%;
-                    //     display: inline-block;
-                    // }
-                }
+//                 .heading {
+//                     font-size: 4.3rem;
+//                     line-height: 1.3;
+//                     font-weight: 600;
+//                     margin-left: auto;
+//                     margin-right: auto;
+//                     width: 90%;
+//                     // width: 62rem;
+//                     // @include responsive(tab-land) {
+//                     //     width: 100%;
+//                     //     display: inline-block;
+//                     // }
+//                 }
     
-                .sub-heading {
-                    color: #DDE4EE;
-                    font-size: 3.5rem;
-                    font-weight: 600;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-top: 20px;
-                    width: 72%;
-                    // @include responsive(tab-land) {
-                    //     width: 100%;
-                    //     display: inline-block;
-                    // }
-                    // @include responsive(tab-port) {
-                    //     margin: 2rem 0;
-                    // }
-                }
-            }
+//                 .sub-heading {
+//                     color: #DDE4EE;
+//                     font-size: 3.5rem;
+//                     font-weight: 600;
+//                     margin-left: auto;
+//                     margin-right: auto;
+//                     margin-top: 20px;
+//                     width: 72%;
+//                     // @include responsive(tab-land) {
+//                     //     width: 100%;
+//                     //     display: inline-block;
+//                     // }
+//                     // @include responsive(tab-port) {
+//                     //     margin: 2rem 0;
+//                     // }
+//                 }
+//             }
     
-        }
-        .video-mask{
-            margin: auto;
-            // width: $videoratio;
-            // height: calc((#{$videoratio} / 16rem)*9);
-            // @include videoratio(70rem);
-            // @include responsive(tab-port) {
-            //     @include videoratio(50rem);
-            // }
-            // @include responsive(phone) {
-            // @include videoratio(40rem);
-            // }
-            border-radius: 10px; 
-            overflow: hidden;
-            box-shadow: 0 19px 51px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
-        }
-        // &__video {
-        //     width: $videoratio;
-        //     // height: calc((#{$videoratio} / 16rem)*9);
-        //     // @include videoratio(70rem);
-        //     // // @include responsive(tab-port) {
-        //     // //     @include videoratio(50rem);
-        //     // // }
-        //     @include responsive(phone) {
-        //     @include videoratio(40rem);
-        //     }
-        // }
-    }
-    }
+//         }
+//         .video-mask{
+//             margin: auto;
+//             // width: $videoratio;
+//             // height: calc((#{$videoratio} / 16rem)*9);
+//             // @include videoratio(70rem);
+//             // @include responsive(tab-port) {
+//             //     @include videoratio(50rem);
+//             // }
+//             // @include responsive(phone) {
+//             // @include videoratio(40rem);
+//             // }
+//             border-radius: 10px; 
+//             overflow: hidden;
+//             box-shadow: 0 19px 51px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
+//         }
+//         // &__video {
+//         //     width: $videoratio;
+//         //     // height: calc((#{$videoratio} / 16rem)*9);
+//         //     // @include videoratio(70rem);
+//         //     // // @include responsive(tab-port) {
+//         //     // //     @include videoratio(50rem);
+//         //     // // }
+//         //     @include responsive(phone) {
+//         //     @include videoratio(40rem);
+//         //     }
+//         // }
+//     }
+//     }
 
     
-    // Tablette Version END
+//     // Tablette Version END

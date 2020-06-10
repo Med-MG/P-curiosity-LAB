@@ -1,44 +1,60 @@
-let humberguer = (() => {
-    let hamburger = document.querySelector('.hamburger');
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('is-active');
-    })
-})()
+// let humberguer = (() => {
+//     let hamburger = document.querySelector('.hamburger');
+//     hamburger.addEventListener('click', () => {
+//         hamburger.classList.toggle('is-active');
+//     })
+// })()
 
-$('.typist')
-	.typist({
-		text: 'Extract Value From Problems'
-	})
-	.typistPause(2000) // 2 sec
-	.typistRemove(30)
-    .typistAdd('Extract Value From solutions.')
-    .typistPause(2000) // 2 sec
-	.typistRemove(30)
-	.typistAdd('Inovate and Elevate.');
+// $('.typist')
+// 	.typist({
+// 		text: 'Extract Value From Problems'
+// 	})
+// 	.typistPause(2000) // 2 sec
+// 	.typistRemove(30)
+//     .typistAdd('Extract Value From solutions.')
+//     .typistPause(2000) // 2 sec
+// 	.typistRemove(30)
+// 	.typistAdd('Inovate and Elevate.');
 
 
 
-var navButton = document.querySelector('.navigation__button');
-var navMenu = document.querySelector('.navigation__menu');
-let hamburger = document.querySelector('.hamburger');
-var win = window;
+// var navButton = document.querySelector('.navigation__button');
+// var navMenu = document.querySelector('.navigation__menu');
+// let hamburger = document.querySelector('.hamburger');
+// var win = window;
 
-function openMenu(event) {
+// function openMenu(event) {
   
-  navButton.classList.toggle('active');
-  navMenu.classList.toggle('active');
+//   navButton.classList.toggle('active');
+//   navMenu.classList.toggle('active');
 
-  event.preventDefault();
-  event.stopImmediatePropagation();
-}
+//   event.preventDefault();
+//   event.stopImmediatePropagation();
+// }
 
-function closeMenu(event) {
-  if (navButton.classList.contains('active')) {
-    navButton.classList.remove('active');
-	navMenu.classList.remove('active');
-	hamburger.classList.remove('is-active');
-  }
-}
-  navButton.addEventListener('click', openMenu, false);
+// function closeMenu(event) {
+//   if (navButton.classList.contains('active')) {
+//     navButton.classList.remove('active');
+// 	navMenu.classList.remove('active');
+// 	hamburger.classList.remove('is-active');
+//   }
+// }
+//   navButton.addEventListener('click', openMenu, false);
 
-win.addEventListener('click',closeMenu, false);
+// win.addEventListener('click',closeMenu, false);
+
+
+var typed = new Typed('.typist', {
+  strings: ['Exract Value From problems', 
+  'big idea turn into innovation.', 
+  'good ideas, true innovation',
+  'continuously transforming ',
+  'Ultimately, progress '
+],
+  loop: true,
+  loopCount: Infinity,
+  smartBackspace: true,
+  typeSpeed: 30,
+  backSpeed: 30,
+  
+});
