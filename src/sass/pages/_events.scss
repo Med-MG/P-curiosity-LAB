@@ -1,7 +1,7 @@
 .events {
     position: relative;
     padding: 10rem;
-
+    overflow: hidden;
     .bg-circle {
         position: absolute;
         width: 30rem;
@@ -30,7 +30,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 8rem;
-        @include responsive(small-desktop) {
+        @include responsive(tab-land) {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         }
@@ -38,14 +38,15 @@
 
     &__list {
         grid-area: 1 / 1 / 2 / 2;
-        // @include responsive(tab-port){
-        //     grid-area: 1 / 1 / 2 / 2;
-        // }
+        @include responsive(tab-land){
+            grid-area: 1 / 1 / 2 / 2;
+        }
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column;
         align-items: flex-end;
-        @include responsive(small-desktop){
-            flex-direction: row;
+        @include responsive(tab-land){
+            align-items: center;
+
         }
         justify-content: space-between;
         grid-gap: 5rem;
@@ -59,13 +60,18 @@
         background-color: $color-white;
         border-radius: 5px;
         width: 75%;
-        @include responsive(small-desktop){
-            width: 30%;
-        }
+        cursor: pointer;
+        @include responsive(phone-1){
+            padding: 5rem;
 
-        @include responsive(tab-port){
-            width: 100%;
         }
+        // @include responsive(small-desktop){
+        //     width: 30%;
+        // }
+
+        // @include responsive(tab-port){
+        //     width: 100%;
+        // }
 
         // &--1{}
         // &--2{}
@@ -91,8 +97,8 @@
 
     &__display {
         grid-area: 1 / 2 / 2 / 4;
-        @include responsive(small-desktop){
-            grid-area: 2 / 1 / 4 / 2;
+        @include responsive(tab-land){
+            grid-area: 2 / 1 / 3 / 2;
         } 
         justify-self: center;
 
@@ -101,6 +107,17 @@
             overflow: hidden;
             width: 70rem;
             height: 39.3rem;
+
+            @include responsive(small-desktop){
+                width: 60rem;
+            }
+
+            @include responsive(phone-1){
+                width: 50rem;
+            }
+            @include responsive(phone){
+                width: 42rem;
+            }
         }
 
         &-img {
@@ -111,7 +128,9 @@
             display: flex;
             grid-gap: 8rem;
             margin-top: 8rem;
-
+            @include responsive(phone-1){
+                text-align: center;
+            }
             &--1 {}
 
             &--2 {}
@@ -122,6 +141,7 @@
                 display: inline-block;
                 position: relative;
                 top: -2.2rem;
+                
             }
 
             &-title {

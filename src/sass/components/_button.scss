@@ -1,41 +1,41 @@
-@media (min-width: 1200px){
-.getStarted{
-    &__btn{
-        border: none;
-        border-radius: 8px;
-        background-color: $secondary;
-        color: $color-white;
-        padding: 24px 144px;
-        font-size: 24px;
-        font-weight: 500;
-        box-shadow: $default-shadow;
-        margin-bottom: 80px;
-        cursor: pointer;
+@media (min-width: 1200px) {
+    .getStarted {
+        &__btn {
+            border: none;
+            border-radius: 8px;
+            background-color: $secondary;
+            color: $color-white;
+            padding: 24px 144px;
+            font-size: 24px;
+            font-weight: 500;
+            box-shadow: $default-shadow;
+            margin-bottom: 80px;
+            cursor: pointer;
+        }
+    }
+
+    .form {
+        &__btnSend {
+            margin-top: 24px;
+            margin-bottom: 32px;
+            width: 100%;
+            border: none;
+            padding: 16px;
+            background-color: $secondary;
+            color: $color-white;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+        }
     }
 }
 
-.form{
-    &__btnSend{
-        margin-top: 24px;
-        margin-bottom: 32px;
-        width: 100%;
-        border: none;
-        padding: 16px;
-        background-color: $secondary;
-        color: $color-white;
-        font-weight: 600;
-        font-size: 16px;
-        cursor: pointer;
-        }
-}
-}
-
-@media (min-width: 320px) and (max-width: 480px){
-    .getStarted{
-        &__btn{
+@media (min-width: 320px) and (max-width: 480px) {
+    .getStarted {
+        &__btn {
             border-radius: 8px;
             display: block;
-            padding: 24px 120px;  
+            padding: 24px 120px;
             margin-top: 24px;
             margin-bottom: 56px;
             margin-left: auto;
@@ -48,11 +48,12 @@
             box-shadow: $default-shadow;
             font-weight: 500;
             font-size: 24px;
-            cursor: pointer;      
+            cursor: pointer;
         }
     }
-    .form{
-        &__btnSend{
+
+    .form {
+        &__btnSend {
             margin-bottom: 32px;
             width: 100%;
             border: none;
@@ -62,16 +63,16 @@
             font-weight: 600;
             font-size: 16px;
             cursor: pointer;
-            }
+        }
     }
 }
 
-@media (min-width: 600px)and (max-width: 1024px){
-    .getStarted{
-        &__btn{
+@media (min-width: 600px)and (max-width: 1024px) {
+    .getStarted {
+        &__btn {
             border-radius: 8px;
             display: block;
-            padding: 24px 120px;  
+            padding: 24px 120px;
             margin-top: 24px;
             margin-bottom: 56px;
             margin-left: auto;
@@ -84,12 +85,12 @@
             box-shadow: $default-shadow;
             font-weight: 500;
             font-size: 24px;
-            cursor: pointer;      
+            cursor: pointer;
         }
     }
 
-    .form{
-        &__btnSend{
+    .form {
+        &__btnSend {
             margin-top: 24px;
             margin-bottom: 32px;
             width: 100%;
@@ -100,11 +101,12 @@
             font-weight: 600;
             font-size: 16px;
             cursor: pointer;
-            }
+        }
     }
 }
 
 .btn {
+
     &,
     &:link,
     &:visited {
@@ -120,43 +122,55 @@
         //Change for the <button> element
         border: none;
         cursor: pointer;
-        @include responsive(tab-port) {
-            display: block;
-            width: 35rem;
-            margin: 5rem auto;
-        }
+
+        // @include responsive(tab-port) {
+        //     display: block;
+        //     width: 35rem;
+        //     margin: 5rem auto;
+        // }
     }
+
     &__arrow-tip {
         width: 1.3rem;
         margin-left: 2rem;
     }
+
     &:hover {
         transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
 
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
             opacity: 0;
         }
     }
-    
+
     &:active,
     &:focus {
         outline: none;
         transform: translateY(-1px);
-        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
     }
-    
+
     &--blue {
         background-color: $secondary-variant;
         color: $color-white;
-
+       
         &::after {
             background-color: $secondary-variant;
         }
     }
 
-    
+    &--header {
+        @include responsive(small-desktop) {
+            margin: 4rem auto;
+            display: block !important;
+            width: 35rem;
+        }
+
+    }
+
+
     &::after {
         content: "";
         display: inline-block;
@@ -169,11 +183,12 @@
         z-index: -1;
         transition: all .4s;
     }
-    
+
 }
 
 
 .btn-text {
+
     &:link,
     &:visited {
         font-size: 2rem;
@@ -199,6 +214,7 @@
 }
 
 .btn-subscribe {
+
     &,
     &:link,
     &:visited {
@@ -221,5 +237,5 @@
         height: 5rem;
         width: 20rem;
         text-align: center;
-}
+    }
 }
