@@ -74,7 +74,11 @@ for media queries 1em = 16px
     @if $breakpoint == phone {
         @media screen and (max-width: 37.5em) { @content }; //600px
     }
-    
+
+    @if $breakpoint == tab-port-1 {
+        @media screen and (max-width: 50em) { @content }; //800px
+    }
+
     @if $breakpoint == tab-port {
         @media screen and (max-width: 56.25em) { @content }; //900px
     }

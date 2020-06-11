@@ -2,6 +2,9 @@
     position: relative;
     padding: 10rem;
     overflow: hidden;
+    @include responsive(phone) {
+        padding: 0 5rem;
+    }
     .bg-circle {
         position: absolute;
         width: 30rem;
@@ -24,6 +27,9 @@
         @include main-subheading;
         width: 40%;
         margin: .5rem auto;
+        @include responsive(phone) {
+            width: 100%;
+        }
     }
 
     &__main {
@@ -126,14 +132,22 @@
 
         &-info {
             display: flex;
-            grid-gap: 8rem;
+            justify-content: space-around;
             margin-top: 8rem;
+            @include responsive(phone) {
+                margin-top: -6rem;
+                flex-direction: column;
+            }
             @include responsive(phone-1){
                 text-align: center;
             }
             // &--1 {}
 
-            // &--2 {}
+            &--2 {
+                @include responsive(phone) {
+                    margin-top: 5rem;
+                }
+            }
 
             &-icon {
                 color: $secondary-variant;
@@ -141,6 +155,9 @@
                 display: inline-block;
                 position: relative;
                 top: -2.2rem;
+                @include responsive(phone) {
+                    display: block !important;
+                }
                 
             }
 
@@ -159,6 +176,9 @@
         &-info-box {
             display: inline-block;
             margin-left: 2rem;
+            @include responsive(phone) {
+                margin-left: 0;
+            }
         }
 
     }

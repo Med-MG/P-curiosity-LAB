@@ -44,20 +44,6 @@
 // win.addEventListener('click',closeMenu, false);
 
 
-var typed = new Typed('.typist', {
-  strings: ['Exract Value From problems', 
-  'big idea turn into innovation.', 
-  'good ideas, true innovation',
-  'continuously transforming ',
-  'Ultimately, progress '
-],
-  loop: true,
-  loopCount: Infinity,
-  smartBackspace: true,
-  typeSpeed: 30,
-  backSpeed: 30,
-  
-});
 
 //Events Toggles
 
@@ -101,7 +87,11 @@ let events = (() => {
     date.innerHTML = `${date}`;
     eimg.src = `${img}`;
   }
+  if(firstitem === null){
+    return;
+  }
   firstitem.addEventListener('click', (e) => {
+    
     firstitem.classList.add('event-active');
     seconditem.classList.remove('event-active');
     thirstitem.classList.remove('event-active');

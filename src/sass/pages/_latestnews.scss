@@ -1,5 +1,8 @@
 .news {
     padding: 10rem;
+    @include responsive(phone) {
+        padding: 0 5rem;
+    }
 
     &-title {
         margin: 0 auto;
@@ -13,6 +16,9 @@
             @include main-subheading;
             width: 50%;
             margin: 0 auto;
+            @include responsive(phone) {
+                width: 100%;
+            }
         }
     }
 
