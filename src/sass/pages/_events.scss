@@ -143,7 +143,11 @@
             }
             // &--1 {}
 
-            // &--2 {}
+            &--2 {
+                @include responsive(phone) {
+                    margin-top: 5rem;
+                }
+            }
 
             &-icon {
                 color: $secondary-variant;
