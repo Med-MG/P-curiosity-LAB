@@ -132,7 +132,7 @@
 
         &-info {
             display: flex;
-            grid-gap: 8rem;
+            justify-content: space-around;
             margin-top: 8rem;
             @include responsive(phone) {
                 margin-top: -6rem;
