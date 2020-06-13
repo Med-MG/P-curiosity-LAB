@@ -1,7 +1,129 @@
 @@include('includes/nav.html')
-
-@@include('includes/objectives.html')
-@@include('includes/howWork.html')
+<section class="header__pages">
+ @@include('includes/nav_alt.html')
+<img class="header__bgPages fadeInUp animated" src="images/bg-aboutUs.png" alt="background">
+</section>
+<section class="aboutUs">
+<h1 class="aboutUs__title">Who We Are?</h1>
+<div class="aboutUs__wrapper">
+        <p class="aboutUs__para">
+                        We are an innovation LAB committed to ensure a 
+                        community-led transformation for rural communities 
+                        across Africa, and this by providing inclusive, 
+                        sustainable and innovative services. <br>
+                        P-Curiosity LAB (PCL) is hustles with innovative 
+                        people & their world-shaping ideas 
+                        working with experts and mentors. <br>
+                        Located at University Mohammed VI Polytechnic*<a class="aboutUs__para--um6p" href="https://www.um6p.ma/en">(UM6P)</a>, The P Curiosity LAB use biomimetic as 
+                        inspiration process. The Lab members can explore, prototype and test innovative services with the 
+                        aim to serve farmer sustainably and finding a new opportunities to improve services business. 
+                        <span class="aboutUs__para--span">In P-Curiosity LAB students, researchers, experts and entrepreneurs feed each other. This 
+                                        exchange between the world of science and that of the company allows the realization of new 
+                                        ideas and the commercialization of the services that come from it. In addition, the proximity 
+                                        between the different actors accelerates the development process.</span>
+        </p>
+<div class="btnMore">
+        <button class="aboutUs__btn">More</button>
+</div>
+        <img src="images/bgVi.png" alt="About us" class="aboutUs__img1">
+        <img src="images/circle.png" alt="circle" class="aboutUs__img2">
+        <a id="play-video" class="video-play-button" href="#">
+                        <span></span>
+                      </a>
+                        
+        <div id="video-overlay" class="video-overlay">
+                        <a class="video-overlay-close">&times;</a>
+         </div>
+</div>
+</section>
+<!-- <div class="teamUs__wrapper">
+        <h1 class="teamUs__title">meet our expert team</h1>
+        <h3 class="teamUs__subtitle">We Will Ready For Serving You</h3>
+        <button class="teamUs__more">view more</button> -->                                          
+        <!-- </div> --> 
+<!-- <section class="teamUs owl-carousel" id="myCarousel">
+<div class="AboutUs__team">
+                <div class="team-img">
+                    <img alt="" class="img-fluid" src="images/tm.png">
+                        <div class="overlay"></div>
+                        <div class="social">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i  class="far fa-envelope"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h5 class="teamName">Will Stewart</h5>
+                    <h5 class="teamPost">Président</h5>
+</div>
+<div class="AboutUs__team">
+        <div class="team-img">
+            <img alt="" class="img-fluid" src="images/tm.png">
+                <div class="overlay"></div>
+                <div class="social">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i  class="far fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h5 class="teamName">Will Stewart</h5>
+            <h5 class="teamPost">Président</h5>
+</div>
+<div class="AboutUs__team">
+        <div class="team-img">
+            <img alt="" class="img-fluid" src="images/tm.png">
+                <div class="overlay"></div>
+                <div class="social">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i  class="far fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h5 class="teamName">Will Stewart</h5>
+            <h5 class="teamPost">Président</h5>
+</div>
+</section> -->
 @@include('includes/weOffer.html')
 <section class="clusters">
     <h1 class="clusters__title">Clusters</h1>
@@ -24,3 +146,66 @@
 </section>
 @@include('includes/getStarted.html')
 @@include('includes/footer.html')
+
+
+<script>
+$('#play-video').on('click', function(e){
+  e.preventDefault();
+  $('#video-overlay').addClass('open');
+  $("#video-overlay").append('<iframe width="50%" height="50%" src="../images/aboutPCL.mp4" frameborder="0" allowfullscreen></iframe>');
+});
+
+$('.video-overlay, .video-overlay-close').on('click', function(e){
+  e.preventDefault();
+  close_video();
+});
+
+$(document).keyup(function(e){
+  if(e.keyCode === 27) { close_video(); }
+});
+
+function close_video() {
+  $('.video-overlay.open').removeClass('open').find('iframe').remove();
+};</script>
+
+
+<!-- <script>
+var $owl = $('#myCarousel');
+var owl = $owl.owlCarousel({
+  autoplay: true,
+  dots: false,
+  loop: true,
+  nav: true,
+  navText: [ "<i class=\"fa fa-chevron-left\"></i>",
+             "<i class=\"fa fa-chevron-right\"></i>" ],
+  responsiveBaseElement: '.main',
+  responsive : {
+    0 : {
+      items: 1,
+      slideBy: 1,
+    },
+    400 : {
+      items: 1,
+      slideBy: 1,
+    },
+    768 : {
+      items: 3,
+      slideBy: 2,
+    },
+    992 : {
+      items: 4,
+      slideBy: 2,
+    },
+    1200 : {
+      items: 5,
+      slideBy: 2,
+    },
+  },
+});
+
+$('.sidebar-switcher').click(function(){
+  $('body').toggleClass( 'body-open' );
+  $('.main').one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function(event) {
+    owl.trigger('refresh.owl.carousel');
+  });
+});</script> -->
