@@ -1,5 +1,7 @@
 @media (min-width: 1200px) and (max-width: 1440px){
     .clusters{
+        background: url(../images/clusterBg.png);
+        background-repeat: no-repeat;
         &__title{
             text-transform: uppercase;
             text-align: center;
@@ -81,6 +83,9 @@
 
 @media (min-width: 1441px){
     .clusters{
+        background: url(../images/clusterBg.png);
+        background-repeat: no-repeat;
+        margin-bottom: 80px;
         &__title{
             text-transform: uppercase;
             text-align: center;
@@ -166,7 +171,8 @@
 
 @media (min-width: 320px) and (max-width: 480px){
         .clusters{
-            margin-top: 120px;
+            background: url(../images/clusterBg.png);
+            background-repeat: no-repeat;
             &__title{
                 text-transform: uppercase;
                 text-align: center;
@@ -258,7 +264,7 @@
 
 @media (min-width: 600px)and (max-width: 1024px){
     .clusters{
-        margin-top: 120px;
+        background: url(../images/clusterBg.png);
         &__title{
             text-transform: uppercase;
             text-align: center;
