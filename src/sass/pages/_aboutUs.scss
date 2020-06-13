@@ -7,14 +7,13 @@
         background-repeat: round;
         height: 72vh;
     }
-    &__bgPages{
-        display: block;
-        width: 48rem;
-        height: auto;
-        margin: auto;
-    }
 }
-
+.bgabus{
+    width: 25%;
+    display: block;
+    height: auto;
+    margin: auto;
+}
 .aboutUs{
     margin-top: -176px;
     background-image: url(../images/abUs.png);
@@ -358,14 +357,13 @@
             background-repeat: round;
             height: 72vh;
         }
-        &__bgPages{
-            display: block;
-            width: 48rem;
-            height: auto;
-            margin: auto;
-        }
     }
-    
+    .bgabus{
+        width: 20%;
+        display: block;
+        height: auto;
+        margin: auto;
+    }
     .aboutUs{
         margin-top: -176px;
         background-image: url(../images/abUs.png);
@@ -707,14 +705,14 @@
             position: relative;
             background-size: cover;
             background-repeat: round;
-            height: 72vh;
+            height: 64vh;
         }
-        &__bgPages{
-            display: block;
-            width: 48rem;
-            height: auto;
-            margin: auto;
-        }
+    }
+    .bgabus{
+        width: 72%;
+        display: block;
+        height: auto;
+        margin: auto;
     }
     
     .aboutUs{
@@ -1060,15 +1058,16 @@
             position: relative;
             background-size: cover;
             background-repeat: round;
-            height: 66vh;
-        }
-        &__bgPages{
-            display: block;
-            width: 48rem;
-            height: auto;
-            margin: auto;
+            height: 56vh;
         }
     }
+    .bgabus{
+        width: 48%;
+        display: block;
+        height: auto;
+        margin: auto;
+    }
+
     
     .aboutUs{
         margin-top: -176px;
