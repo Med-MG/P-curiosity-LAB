@@ -1,7 +1,10 @@
 // Desktop Version 
 @media (min-width: 1441px){
-  .bgteam{
-    width: 80%;
+  .bgteamp{
+    width: 40%;
+    display: block;
+    height: auto;
+    margin: auto;
   }
 .team {
     background-image: url("../images/bg-offer.png");
@@ -127,6 +130,12 @@
   }
 }
 @media (min-width: 1200px) and (max-width: 1440px){
+  .bgteamp{
+    width: 36%;
+    display: block;
+    height: auto;
+    margin: auto;
+  }
   .team {
       background-image: url("../images/bg-offer.png");
       position: relative;
@@ -254,6 +263,12 @@
 
 // Mobile Version 
 @media (min-width: 320px) and (max-width: 480px){
+  .bgteamp{
+    width: 72%;
+    display: block;
+    height: auto;
+    margin: auto;
+  }
     .team{
       background-image: url("../images/bg-offer.png");
       position: relative;
@@ -390,6 +405,12 @@
 
 // Tablette Version 
 @media (min-width: 600px)and (max-width: 1024px){
+  .bgteamp{
+    width: 72%;
+    display: block;
+    height: auto;
+    margin: auto;
+  }
     .team{
       background-image: url("../images/bg-offer.png");
       position: relative;
