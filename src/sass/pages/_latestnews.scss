@@ -192,7 +192,6 @@
 
         &-title {
             width: 40rem;
-
             .card-title {
                 text-decoration: none;
                 @include small-font;
@@ -209,3 +208,10 @@
 
     }
 }
+
+
+// .owl-carousel {
+//     & .owl-item {
+//         margin-right: 1rem;
+//     }
+// }

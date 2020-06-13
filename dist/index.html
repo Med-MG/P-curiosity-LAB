@@ -745,46 +745,39 @@
     backSpeed: 40,
   });
 
-  $(document).ready(function () {
-    $(".owl-carousel").owlCarousel({
-      loop: true,
-      margin: 10,
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 1,
-          nav: true,
-        },
-        600: {
-          items: 1,
-          nav: false,
-        },
-        1200: {
-          items: 2,
-          nav: true,
-          loop: false,
-          margin: 20,
-        },
-        1000: {
-          items: 3,
-          nav: true,
-          loop: false,
-          margin: 20,
-        },
+  var owl = $(".owl-carousel");
+  owl.owlCarousel({
+    loop: true,
+    autoWidth:true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+      0:{
+          items:1,
       },
-    });
+      600: {
+        items: 2,
+        margin: 20,
+        nav: false,
+      },
+      1980: {
+        items: 3,
+        margin: 20,
+        nav: false,
+        loop: true,
+      },
+    },
   });
 
-  var owl = $('.owl-carousel');
-owl.owlCarousel();
-// Go to the next item
-$('.news-next').click(function() {
-    owl.trigger('next.owl.carousel');
-})
-// Go to the previous item
-$('.news-prev').click(function() {
+  owl.owlCarousel();
+  // Go to the next item
+  $(".news-next").click(function () {
+    owl.trigger("next.owl.carousel");
+  });
+  // Go to the previous item
+  $(".news-prev").click(function () {
     // With optional speed parameter
     // Parameters has to be in square bracket '[]'
-    owl.trigger('prev.owl.carousel', [300]);
-})
+    owl.trigger("prev.owl.carousel", [300]);
+  });
 </script>
