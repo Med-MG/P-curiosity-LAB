@@ -1,5 +1,11 @@
 // Desktop Version 
 @media (min-width: 1441px){
+  .bgteamp{
+    width: 40%;
+    display: block;
+    height: auto;
+    margin: auto;
+  }
 .team {
     background-image: url("../images/bg-offer.png");
     position: relative;
@@ -124,6 +130,12 @@
   }
 }
 @media (min-width: 1200px) and (max-width: 1440px){
+  .bgteamp{
+    width: 36%;
+    display: block;
+    height: auto;
+    margin: auto;
+  }
   .team {
       background-image: url("../images/bg-offer.png");
       position: relative;
@@ -251,6 +263,12 @@
 
 // Mobile Version 
 @media (min-width: 320px) and (max-width: 480px){
+  .bgteamp{
+    width: 72%;
+    display: block;
+    height: auto;
+    margin: auto;
+  }
     .team{
       background-image: url("../images/bg-offer.png");
       position: relative;
@@ -260,7 +278,7 @@
       &__grid{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+        grid-template-rows: max-content;
         max-width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -387,6 +405,12 @@
 
 // Tablette Version 
 @media (min-width: 600px)and (max-width: 1024px){
+  .bgteamp{
+    width: 72%;
+    display: block;
+    height: auto;
+    margin: auto;
+  }
     .team{
       background-image: url("../images/bg-offer.png");
       position: relative;
@@ -412,14 +436,14 @@
         }
       }
       &__block{
-        width: 72%;
+        width: 80%;
         margin: 24px auto;
         display: block;
       }
       &__grid {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-rows: max-content;
         max-width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -481,7 +505,7 @@
       display: block;
       background-color: $color-white;
       border: 0.5px solid $color-black;
-      padding: 32px;
+      padding: 32px 8px;
       margin-left: auto;
       margin-right: auto;
       margin-top: -72px;
@@ -490,7 +514,7 @@
     .team__block .team__box .team__infos h5 {
       position: relative;
       display: block;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 28px;
       color: $color_black;
       font-weight: 600;
@@ -500,9 +524,10 @@
     .team__block .team__box .team__infos .post {
       position: relative;
       display: block;
-      font-size: 14px;
-      font-weight: 500;
+      font-size: 11px;
+      font-weight: 700;
       color: $secondary;
+      font-family: Nunito,sans-serif;
     }
   }
 // Tablette Version END
