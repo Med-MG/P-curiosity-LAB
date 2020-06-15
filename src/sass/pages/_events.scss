@@ -4,6 +4,7 @@
     overflow: hidden;
     @include responsive(phone) {
         padding: 0 5rem;
+        margin-top: 20rem !important;
     }
     .bg-circle {
         position: absolute;
