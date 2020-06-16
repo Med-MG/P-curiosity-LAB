@@ -1,0 +1,203 @@
+@media (min-width: 1441px){
+
+    .er404{
+        width: 80%;
+        margin: 40px auto;
+        &__title{
+            font-size: 40px;
+            text-align: center;
+            color: $primary;
+        }
+        &__subtitle{
+            font-size: 24px;
+            font-weight: 500;
+            text-align: center;
+            width: 56%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+            display: block;
+        }
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 33% 34% 33%;
+            grid-template-rows: 100%;
+            width: 88%;
+            margin: 48px auto;
+        }
+        &__er1{
+            grid-area: 1/1;
+            display: block;
+            margin: auto;
+        }
+        &__er2{
+            grid-area: 1/2;
+            display: block;
+            margin: auto;
+            animation: spin 14000ms linear infinite;
+
+        }
+        &__er3{
+            grid-area: 1/3;
+            display: block;
+            margin: auto;
+
+        }
+    }
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+.goHome {
+  border: none;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  color: $color-white;
+  text-transform: uppercase;
+  background-color: $color-tertiary-light;
+  transition: 0.5s;
+  border-radius: 24px;
+  font-weight: 600;
+  font-size: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 17px;
+  padding-bottom: 13px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+}
+
+.goHome span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: $primary;
+  -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.goHome:hover, .goHome:focus {
+  color: $color-white;
+  -webkit-box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.25);
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.goHome:hover span, .goHome:focus span {
+  width: 225%;
+  height: 562.5px;
+}
+}
+
+
+@media (min-width: 1200px) and (max-width: 1440px){
+    .er404{
+        width: 88%;
+        margin: 80px auto;
+        &__title{
+            font-size: 40px;
+            text-align: center;
+            color: $primary;
+        }
+        &__subtitle{
+            font-size: 24px;
+            font-weight: 500;
+            text-align: center;
+            width: 56%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+            display: block;
+        }
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 33% 34% 33%;
+            grid-template-rows: 100%;
+            margin: 48px auto;
+        }
+        &__er1{
+            grid-area: 1/1;
+            display: block;
+            margin: auto;
+        }
+        &__er2{
+            grid-area: 1/2;
+            display: block;
+            margin: auto;
+            animation: spin 14000ms linear infinite;
+        }
+        &__er3{
+            grid-area: 1/3;
+            display: block;
+            margin: auto;
+        }
+    }
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+.goHome {
+  border: none;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  color: $color-white;
+  text-transform: uppercase;
+  background-color: $color-tertiary-light;
+  transition: 0.5s;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 17px;
+  padding-bottom: 13px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+}
+
+.goHome span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: $primary;
+  -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.goHome:hover, .goHome:focus {
+  color: $color-white;
+  -webkit-box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.25);
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.goHome:hover span, .goHome:focus span {
+  width: 225%;
+  height: 562.5px;
+}
+}
+
