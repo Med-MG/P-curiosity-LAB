@@ -1,5 +1,6 @@
 .news {
     padding: 10rem;
+
     @include responsive(phone) {
         padding: 0 5rem;
     }
@@ -81,7 +82,14 @@
         border-radius: .6rem;
         overflow: hidden;
         margin-bottom: 5rem;
-
+        font-weight: 400;
+        text-decoration: none;
+        &-category {
+            color: #0055fb;
+            font-size: 1.4rem;
+            line-height: 1;
+            margin: 1rem 0;
+        }
         &-top {
             @include videoratio(50rem);
             position: relative;
