@@ -26,9 +26,9 @@
     &__navigation {
         padding: 5rem;
         text-align: right;
-        @include responsive(tab-land-1){
-            text-align: center;
-        }
+        // @include responsive(tab-land-1){
+        //     text-align: center;
+        // }
         &-btn {
             display: inline-block;
             background-color: $color-white;

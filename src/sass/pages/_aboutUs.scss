@@ -964,7 +964,10 @@
         color: $secondary-variant;
     }
     .AboutUs__team{
-        margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: max-content;
     }
     
     .AboutUs__team .team-img {
@@ -978,13 +981,6 @@
         
     }
     
-    .owl-carousel .owl-item img{
-        width: 80%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 20px;
-    }
     .AboutUs__team .team-img .overlay {
         opacity: 0;
         transition: 0.6s
