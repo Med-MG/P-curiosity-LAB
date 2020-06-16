@@ -170,7 +170,7 @@
     color: $error;
     }
 
-form{
+    #contact-form{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 25% 25% 25% 25%;
@@ -455,7 +455,7 @@ form{
         }
 
 
-    form{
+    #contact-form{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 20% 20% 20% 20% 20%;
@@ -738,7 +738,7 @@ form{
         }
     }
 
-    form{
+    #contact-form{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 25% 25% 25% 25%;
