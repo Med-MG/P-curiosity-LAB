@@ -1,0 +1,17 @@
+@media (min-width: 1441px){
+    .header{
+        &__page{
+            background-image: url("../images/bg-heroPages1.png");
+            position: relative;
+            background-size: cover;
+            background-repeat: round;
+            height: 48vh;
+            &--title{
+                font-size: 40px;
+                text-align: center;
+                color: $primary;
+                padding: 80px;
+            }
+    }
+    }
+}
