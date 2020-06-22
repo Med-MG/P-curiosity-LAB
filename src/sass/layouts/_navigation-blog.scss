@@ -53,18 +53,22 @@
         height: 100vh;
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
+        @include responsive(phone) {
+            top: -17%;
+            right:  17%;
+        }
         z-index: 1500;
-
         opacity: 0;
         width: 0;
         transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        pointer-events: none;
     }
 
     &__list {
         position: absolute;
         top: 50%;
-        left: 50%;
+        right: -70%;
         transform: translate(-50%,-50%);
         list-style: none;
         text-align: center;
@@ -106,12 +110,19 @@
 
     //FUNCTIONALITY
     &__checkbox:checked ~ &__background {
-        transform: scale(80);
+        transform: scale(35);
+        @include responsive(tab-land) {
+            transform: scale(30);
+        }
+        @include responsive(tab-port) {
+            transform: scale(25);
+        }
     }
 
     &__checkbox:checked ~ &__nav {
         opacity: 1;
         width: 100%;
+        pointer-events: auto;
     }
 
 
