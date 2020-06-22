@@ -1,6 +1,16 @@
 //* ::::::::::: Offer section :::::::::
 //* ::::::::::::::::: DOM ::::::::::::::
 
+// document.querySelector('.titles__title1') ? btnRural = document.querySelector('.titles__title1') : null;
+// document.querySelector('.titles__title2') ? btnIdea = document.querySelector('.titles__title2') : null;
+// document.querySelector('.titles__title3') ? btnBusiness = document.querySelector('.titles__title3') : null;
+// document.querySelector('.titles__title4') ? btnSci = document.querySelector('.titles__title4') : null;
+// document.querySelector('.rural') ? rural = document.querySelector('.rural') : null;
+// document.querySelector('.idea') ? idea = document.querySelector('.idea') : null;
+// document.querySelector('.business') ? business = document.querySelector('.business') : null;
+// document.querySelector('.scientifics') ? document.querySelector('.scientifics') : null;
+// document.querySelector('.animation') ? animateBox = document.querySelector('.animation') : null;
+
 const btnRural = document.querySelector('.titles__title1')
 const btnIdea = document.querySelector('.titles__title2')
 const btnBusiness = document.querySelector('.titles__title3')
@@ -14,11 +24,14 @@ const animateBox = document.querySelector('.animation')
 //* ::::::::::::::::: DOM ::::::::::::::
 
 //* ::::::::::::::::: EVENTS ::::::::::::::
-
-btnRural.addEventListener('click',fRural)
-btnIdea.addEventListener('click',fIdea)
-btnBusiness.addEventListener('click',fBusiness)
-btnSci.addEventListener('click',fSci)
+if(btnRural !== null)
+btnRural.addEventListener('click',fRural);
+if(btnIdea !== null)
+btnIdea.addEventListener('click',fIdea);
+if(btnBusiness !== null)
+btnBusiness.addEventListener('click',fBusiness);
+if(btnSci !== null)
+btnSci.addEventListener('click',fSci);
 
 function fRural(){
     rural.style.display = 'grid'
