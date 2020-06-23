@@ -1,0 +1,20 @@
+.blog-header{
+    &__hero{}
+    &__title{}
+}
+
+.blog-posts{
+    padding: 0 10rem;
+    &__title{
+        @include small-font;
+    }
+    &__grid{
+        width: 90%;
+        margin: 5rem auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+        grid-template-rows: auto;
+        grid-gap: 5rem;
+        justify-items: center;
+    }
+}
