@@ -1,11 +1,13 @@
 let paraInfo, btnMore;
 
-document.querySelector('.aboutUs__para--span') ? paraInfo = document.querySelector('.aboutUs__para--span') : null;
-document.querySelector('.btnMore') ?  btnMore = document.querySelector('.btnMore') : null;
+paraInfo = document.querySelector('.aboutUs__para--span')
+btnMore = document.querySelector('.btnMore')
 
 
+if(btnMore !== null){
+    btnMore.addEventListener('click',AbMore);
+}
 
-btnMore.addEventListener('click',AbMore)
 function AbMore (){
     paraInfo.style.display='block';
     btnMore.style.display='none';
