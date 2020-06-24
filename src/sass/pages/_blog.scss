@@ -1,20 +1,37 @@
+.header__page-alt {
+    background-image: url(../images/bg-heroPages1.png);
+    position: relative;
+    background-size: cover;
+    background-repeat: round;
+    height: max-content;
+}
 .blog-heading{
     // &__hero{}
+    text-align: center;
     &__title{
         font-size: 4rem;
         font-weight: 600;
+        padding: 8rem;
+        color: $primary;
     }
 }
 
 .blog-posts{
     padding: 0 10rem;
+    @include responsive(phone){
+        padding: 0;
+    }
     &__heading{
         width: 91%;
         margin: 5rem auto;
         color: $color-lighter-black;
+        @include responsive(small-desktop ) {
+            text-align: center;
+        }
     }
     &__title{
         @include medium-font;
+
     }
     &__grid{
         width: 90%;
@@ -31,10 +48,10 @@
 .pagination {
     padding: 10rem;
     &-container{
-        width: 20%;
         margin: 0 auto;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        
     }
 
     &__icon{
@@ -42,6 +59,9 @@
         padding: 1.2rem;
         font-size: 1.6rem;
         cursor: pointer;
+        &:not(:last-child){
+            margin-right: 1rem;
+        }
         &:first-child{
         background-color: $secondary-variant;
         color: white;
