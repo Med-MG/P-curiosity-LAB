@@ -1,12 +1,20 @@
-.blog-header{
-    &__hero{}
-    &__title{}
+.blog-heading{
+    // &__hero{}
+    &__title{
+        font-size: 4rem;
+        font-weight: 600;
+    }
 }
 
 .blog-posts{
     padding: 0 10rem;
+    &__heading{
+        width: 91%;
+        margin: 5rem auto;
+        color: $color-lighter-black;
+    }
     &__title{
-        @include small-font;
+        @include medium-font;
     }
     &__grid{
         width: 90%;
