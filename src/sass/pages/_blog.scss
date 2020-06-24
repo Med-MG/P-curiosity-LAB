@@ -26,3 +26,30 @@
         justify-items: center;
     }
 }
+
+
+.pagination {
+    padding: 10rem;
+    &-container{
+        width: 20%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__icon{
+        text-align: center;
+        padding: 1.2rem;
+        font-size: 1.6rem;
+        cursor: pointer;
+        &:first-child{
+        background-color: $secondary-variant;
+        color: white;
+        }
+        background-color: $color-grey-light-3;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 10rem;
+
+    }
+}
