@@ -21,16 +21,16 @@
       
       li {
         display: inline-block;
-        padding: 5px 20px;
-        margin: 24px;
+        padding: 5px 32px;
+        margin: 16px 24px 80px 0px;
         font-size: 24px;
-        border: 1px solid $secondary;
+        border: 2px solid $color-tertiary-light;
         border-radius: 24px;
       }
     }
   
     .active-filtre{
-      color: $primary;
+      color: white;
       font-weight: 600;
       background-color: $color-tertiary-light;
     }
@@ -43,7 +43,6 @@
       .filtr-item {
         width: 33.33333%;
         height: max-content;
-        background-color: red;
         padding: 5px;
       }
     }
@@ -51,8 +50,15 @@
   
   
     .projects{
-      margin-top: 40px;
-    }           
+      margin-top: 80px;
+    }  
+    .name-Project{
+        color: $secondary !important;
+    }         
+
+    .incubtion{
+        background-color: $opacity !important;
+    }
   .single-projects-box {
         position: relative;
         overflow: hidden;
@@ -80,6 +86,7 @@
         transition: transform .3s ease,opacity .3s;
         transition: transform .3s ease,opacity .3s ease;
         max-width: 56%;
+        border-radius: 0px 24px 24px 24px;
         transform: translate3d(-100%, 0, 0);
       }
       
@@ -195,7 +202,6 @@
       
       
   }
-  
   @media (min-width: 1200px) and (max-width: 1440px){
     .header{
         &__page{
@@ -212,63 +218,61 @@
             }
     }
     }
-    ul.filters{
-        display: block;
-        width: 100%;
-        margin: 80px auto;
-        padding: 30px 0;
-        text-align: center;
-    }
-    
-    ul.filters > li{
-        list-style: none;
+  
+    //test///
+    .filter-wrap {
+      text-align: center;
+      
+      li {
         display: inline-block;
-        text-decoration: none;
-    }
-    
-    ul.filters > li > a{
-        display: block;
-        color: $primary;
-        text-decoration: none;
-        padding: 16px 40px;
+        padding: 5px 32px;
+        margin: 16px 24px 80px 0px;
         font-size: 24px;
-        text-transform: uppercase;
-        border: 1px solid $secondary;
-        border-radius: 50px;
-        margin-left: 40px;
-    }
-    
-    ul.filters > li > a:hover{
-        background-color: #e6e9ed;
-    }
-    
-    ul.filters > li.active > a{
-        color: #fff;
-        background-color: $secondary;
+        border: 2px solid $color-tertiary-light;
+        border-radius: 24px;
+      }
     }
   
-    .projects {
-        padding-bottom: 70px;
-        position: relative;
-        z-index: 1;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: max-content max-content max-content;
-        grid-gap:32px;
-        max-width: 88%;
-        margin-left: auto;
-        margin-right: auto;
+    .active-filtre{
+      color: white;
+      font-weight: 600;
+      background-color: $color-tertiary-light;
+    }
+  
+    .filter-container {
+      padding: 5px;  
+      width: 88%;
+      margin-left: auto;
+      margin-right: auto;    
+      .filtr-item {
+        width: 33.33333%;
+        height: max-content;
+        padding: 5px;
       }
-            
-      .single-projects-box {
+    }
+  
+  
+  
+    .projects{
+      margin-top: 80px;
+    }  
+    .name-Project{
+        color: $secondary !important;
+    }         
+
+    .incubtion{
+        background-color: $opacity !important;
+    }
+  .single-projects-box {
         position: relative;
         overflow: hidden;
-        padding: 48px;
+        padding: 40px 32px;
         background-color: #eeeffb;
         width: max-content;
         border-radius: 50px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 40px;
   
       }
   
@@ -286,6 +290,7 @@
         transition: transform .3s ease,opacity .3s;
         transition: transform .3s ease,opacity .3s ease;
         max-width: 56%;
+        border-radius: 0px 24px 24px 24px;
         transform: translate3d(-100%, 0, 0);
       }
       
