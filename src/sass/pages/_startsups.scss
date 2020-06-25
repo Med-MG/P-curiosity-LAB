@@ -14,7 +14,7 @@
             }
     }
     }
-
+  
     //test///
     .filter-wrap {
       text-align: center;
@@ -28,13 +28,13 @@
         border-radius: 24px;
       }
     }
-
+  
     .active-filtre{
       color: $primary;
       font-weight: 600;
       background-color: $color-tertiary-light;
     }
-
+  
     .filter-container {
       padding: 5px;  
       width: 80%;
@@ -47,10 +47,12 @@
         padding: 5px;
       }
     }
-
-
-
-    ////            
+  
+  
+  
+    .projects{
+      margin-top: 40px;
+    }           
   .single-projects-box {
         position: relative;
         overflow: hidden;
@@ -61,10 +63,10 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
-
+  
       }
-
-
+  
+  
       
       .single-projects-box .projects-content {
         position: absolute;
@@ -192,9 +194,9 @@
       }
       
       
-}
-
-@media (min-width: 1200px) and (max-width: 1440px){
+  }
+  
+  @media (min-width: 1200px) and (max-width: 1440px){
     .header{
         &__page{
             background-image: url("../images/bg-heroPages1.png");
@@ -244,7 +246,7 @@
         color: #fff;
         background-color: $secondary;
     }
-
+  
     .projects {
         padding-bottom: 70px;
         position: relative;
@@ -267,10 +269,10 @@
         border-radius: 50px;
         margin-left: auto;
         margin-right: auto;
-
+  
       }
-
-
+  
+  
       
       .single-projects-box .projects-content {
         position: absolute;
@@ -398,4 +400,4 @@
       }
       
       
-}
+  }
