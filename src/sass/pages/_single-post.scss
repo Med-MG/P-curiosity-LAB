@@ -1,0 +1,34 @@
+.single-post {
+    padding: 10rem;
+
+    &__header {
+        text-align: center;
+        font-family: 'poppins', sans-serif ;
+    }
+
+    &__tag {
+        font-size: 2.5rem;
+        font-weight: 400rem;
+        color: $secondary-variant;
+        text-decoration: underline;
+    }
+
+    &__title {
+        @include main-title;
+        width: 33%;
+        margin: 3rem auto;
+    }
+
+    &__author {
+        font-size: $small-font-size;
+        font-weight: 400;
+        margin-top: 5rem;
+    }
+
+    &__published-at {
+        font-size: $default-font-size;
+        color: $color-grey-dark-2;
+        margin-bottom: 5rem;
+
+    }
+}
