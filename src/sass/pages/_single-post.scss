@@ -18,15 +18,17 @@
         @include main-title;
         width: 40%;
         margin: 3rem auto;
-        @include responsive(tab-port){
+
+        @include responsive(tab-port) {
             width: 80%;
         }
-        @include responsive(phone){
+
+        @include responsive(phone) {
             width: 95%;
         }
     }
 
-    &__author {
+    &__name-author {
         font-size: $small-font-size;
         font-weight: 400;
         margin-top: 5rem;
@@ -94,7 +96,7 @@
             width: max-content;
         }
 
-        @include responsive(phone-1 ){
+        @include responsive(phone-1) {
             bottom: -30%;
 
         }
@@ -102,12 +104,15 @@
         &-icon {
             margin-bottom: 1rem;
             transition: $slide;
+
             @include responsive(tab-port-1) {
                 display: inline-block;
-                &:not(:last-child){
+
+                &:not(:last-child) {
                     margin-right: 1rem;
                 }
             }
+
             &:hover {
                 transform: scale(1.1);
             }
@@ -121,9 +126,11 @@
     //This section is for posts content
 
     &__content {
+        padding-bottom: 5rem;
         max-width: 80rem;
-        margin: 10rem auto;
+        margin: 5rem auto;
         font-family: 'Nunito', sans-serif;
+        border-bottom: 1px solid $color-grey-dark-2;
 
         &-paragraph {
             &+h2 {
@@ -137,6 +144,45 @@
         &-subheading {
             font-size: 4rem;
         }
+    }
 
+    &__author {
+
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 76rem;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        &-info {
+            width: 50%;
+            &-imgbox {
+                width: 10rem;
+                height: 10rem;
+                float: left;
+                // border-radius: 50%;
+                overflow: hidden;
+                shape-outside: circle(50% at 50% 50%);
+                clip-path: circle(50% at 50% 50%);
+                transform: translateX(-2rem);
+            }
+
+            &-img {
+                height: 100%;
+            }
+        }
+
+        &-name {
+
+        }
+
+        &-occupation {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: $color-grey-dark;
+        }
+
+        &-contact {}
     }
 }
