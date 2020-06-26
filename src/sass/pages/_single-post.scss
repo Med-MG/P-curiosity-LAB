@@ -1,9 +1,10 @@
 .single-post {
     padding: 10rem;
 
+    // this section here is for post title tag, author and publish date
     &__header {
         text-align: center;
-        font-family: 'poppins', sans-serif ;
+        font-family: 'poppins', sans-serif;
     }
 
     &__tag {
@@ -30,5 +31,35 @@
         color: $color-grey-dark-2;
         margin-bottom: 5rem;
 
+    }
+
+    //this section here is reserved for posts photo and share links
+    &__display {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+
+        &-img {
+            height: 40rem;
+            margin-right: 5rem;
+        }
+
+    }
+
+    &__social {
+        position: absolute;
+        left: 76%;
+
+        &-icon {
+            margin-bottom: 1rem;
+            transition: $slide;
+            &:hover {
+                transform: scale(1.1);
+            }
+            &-img {
+                width: 4rem;
+            }
+        }
     }
 }
