@@ -93,21 +93,21 @@
     <h1 class="header__page--title">Startups</h1>
 </section>
     
-<section class="projects">
+
 <ul class="filter-wrap">
-    <li class="active-filtre" data-filter="all">
+    <li class="active-filtre" data-filter="*">
         <a >All</a>
     </li>
-    <li data-filter="startups">
-            <a>Startups</a>
-        </li>
-    <li data-filter="incubtion">
+    <li data-filter=".startups">
+        <a>Start-ups</a>
+    </li>
+    <li data-filter=".incubtion">
         <a>In incubtion</a>
     </li>
+
 </ul>
-      <div class="filter-container">
-        <div class="filter-inner">
-                <div class= "filtr-item" data-category="startups" data-sort="value">
+<section class="projects">
+                <div class="item startups">
                         <div class="single-projects-box">
                             <img src="images/droolizer.png" alt="leafunder">
                                 <div class="projects-content">
@@ -123,8 +123,8 @@
                                 </div>
                             </div>
                 </div>
-                <div class="filtr-item" data-category="incubtion" data-sort="value">
-                        <div class="single-projects-box incubtion">
+                <div class="item incubtion">
+                        <div class="single-projects-box incubtionn">
                             <img src="images/leafunder.png" alt="leafunder">
                                 <div class="projects-content">
                                     <h3>
@@ -139,7 +139,7 @@
                                 </div>
                             </div>
                 </div>
-                <div class="filtr-item" data-category="startups" data-sort="value">
+                <div class="item startups">
                         <div class="single-projects-box">
                             <img src="images/seedebate.png" alt="leafunder">
                                 <div class="projects-content">
@@ -155,8 +155,8 @@
                                 </div>
                             </div>
                 </div>
-                <div class="filtr-item" data-category="incubtion" data-sort="value">
-                        <div class="single-projects-box incubtion">
+                <div class="item incubtion">
+                        <div class="single-projects-box incubtionn">
                             <img src="images/leafunder.png" alt="leafunder">
                                 <div class="projects-content">
                                     <h3>
@@ -171,7 +171,7 @@
                                 </div>
                             </div>
                 </div>
-                <div class="filtr-item " data-category="startups" data-sort="value">
+                <div class="item startups">
                         <div class="single-projects-box">
                             <img src="images/leafunder.png" alt="leafunder">
                                 <div class="projects-content">
@@ -187,8 +187,8 @@
                                 </div>
                             </div>
                 </div>
-                <div class="filtr-item" data-category="incubtion" data-sort="value">
-                        <div class="single-projects-box incubtion">
+                <div class="item incubtion">
+                        <div class="single-projects-box incubtionn">
                             <img src="images/leafunder.png" alt="leafunder">
                                 <div class="projects-content">
                                     <h3>
@@ -203,8 +203,6 @@
                                 </div>
                             </div>
                 </div>
-
-      </div>
 
     
 </section>
@@ -335,8 +333,9 @@
     <script src="js/typed-js/typed.min.js"></script>
     <script src="https://kit.fontawesome.com/ecadb3d96a.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/jquery.filterizr.min.js"></script>
-
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/jquery.filterizr.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/isotope.min.js"></script>
 
 
     <script src="js/main.min.js"></script>
