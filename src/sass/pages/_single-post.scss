@@ -131,10 +131,11 @@
         max-width: 80rem;
         margin: 5rem auto;
         font-family: 'Nunito', sans-serif;
-        border-bottom: 1px solid $primary-variant;
-        @include responsive(phone){
+
+        @include responsive(phone) {
             margin: 10rem auto;
         }
+
         &-paragraph {
             &+h2 {
                 margin-top: 6rem;
@@ -142,12 +143,15 @@
 
             font-size: 2rem;
             font-weight: 300;
+            color: $primary-variant;
         }
 
         &-subheading {
             font-size: 4rem;
+            color: $color-lighter-black;
         }
     }
+
     //This section is for author mention
     &__author {
 
@@ -156,11 +160,27 @@
         max-width: 76rem;
         margin: 0 auto;
         justify-content: space-between;
+        position: relative;
+        padding: 5rem 0;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 106%;
+            height: 1px;
+            background-color: #f0f0f0;
+            position: absolute;
+            top: 0;
+            left: -2rem;
+        }
+
         &-info {
             width: 50%;
-            @include responsive(phone){
+
+            @include responsive(phone) {
                 width: 80%;
             }
+
             &-imgbox {
                 width: 10rem;
                 height: 10rem;
@@ -169,7 +189,7 @@
                 overflow: hidden;
                 shape-outside: circle(50% at 50% 50%);
                 clip-path: circle(50% at 50% 50%);
-                transform: translateX(-2rem);
+                transform: translate(-2rem, -2rem);
             }
 
             &-img {
@@ -177,7 +197,9 @@
             }
         }
 
-        // &-name {}
+        &-name {
+            font-weight: 500;
+        }
 
         &-occupation {
             font-family: 'Nunito', sans-serif;
@@ -191,36 +213,137 @@
             align-items: center;
             justify-content: space-between;
             width: 25%;
-            @include responsive(tab-port-1){
+            transform: translateY(-2rem);
+
+            @include responsive(tab-port-1) {
                 width: 30%;
             }
-            @include responsive(phone){
+
+            @include responsive(phone) {
                 flex-direction: column;
                 width: 20%;
                 justify-content: space-around;
             }
-            & > p {
+
+            &>p {
                 font-size: 1.5rem;
                 font-weight: 300;
                 color: $primary-variant;
-                @include responsive(phone){
+
+                @include responsive(phone) {
                     display: none;
                 }
             }
-            &-img{
+
+            &-img {
                 width: 3rem;
             }
         }
     }
 }
 
-.mailbox-resources{
-    &__container{}
-    &__heading{}
-    &__main{}
-    &__sub{}
+.mailbox-resources {
+    padding: 0 10rem;
 
-    &__form{}
-    &__subscribe-input{}
-    &__subscribe-sub{}
+    @include responsive(tab-port-1) {
+        padding: 0;
+    }
+
+    &__container {
+        background-color: $color-black;
+        color: white;
+        padding: 8rem 16rem;
+        border-radius: .5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @include responsive(tab-land) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            align-items: center;
+        }
+
+        @include responsive(tab-land-1) {
+            padding-left: 8rem;
+            padding-right: 8rem;
+        }
+    }
+
+    &__heading {
+        @include responsive(tab-land) {
+            width: 60%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        @include responsive(tab-land-1) {
+            width: 100%;
+        }
+    }
+
+    &__main {
+        font-size: 4.5rem;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+    }
+
+    &__sub {
+        font-size: $default-font-size;
+        font-weight: 400;
+    }
+
+    &__form {
+        justify-self: end;
+        width: 70%;
+        text-align: center;
+        @include responsive(small-desktop) {
+            width: 80%;
+        }
+
+        @include responsive(tab-land) {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        @include responsive(tab-land-1) {
+            width: 100%;
+        }
+
+        .btn-subscribe--singlepost {
+            @include responsive(phone) {
+                width: 13rem;
+                top: -2px;
+            }
+
+            @include responsive(phone-1) {
+                left: -1rem;
+            }
+
+            @include responsive(big-desktop) {
+                width: 15rem;
+            }
+        }
+    }
+
+    &__subscribe-input {
+        height: 5rem;
+        align-self: center;
+        padding: 2rem;
+        text-transform: uppercase;
+        color: $color-white;
+        border: 1px solid $primary-variant;
+        border-radius: .5rem;
+        background-color: $color-black;
+        width: 50%;
+
+        @include responsive(phone-1) {
+            width: 57%;
+        }
+    }
+
+    &__subscribe-sub {
+        margin-top: 2rem;
+        font-size: $default-font-size;
+        font-weight: 300;
+    }
 }

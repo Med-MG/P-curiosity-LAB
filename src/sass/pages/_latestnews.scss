@@ -68,6 +68,9 @@
         @include responsive(tab-land-1){
             justify-content: center;
         }
+        @include responsive(phone){
+            width: 100%;
+        }
     }
 
     &__card {
