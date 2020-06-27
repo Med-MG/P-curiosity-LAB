@@ -57,7 +57,6 @@
         &::before {
             content: "";
             display: inline-block;
-            height: 100%;
             width: 0;
             position: absolute;
             bottom: 0;
@@ -108,5 +107,6 @@
         color: $primary-variant;
         border: 1px solid $primary-variant;
         border-radius: .5rem;
+        width: 20rem;
     }
 }
