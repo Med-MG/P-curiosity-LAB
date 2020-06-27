@@ -3,13 +3,19 @@
     position: relative;
     background-size: cover;
     background-repeat: round;
-    height: max-content;
+    height: 55vh;
+    @include responsive(phone){
+        height: 40vh;
+    }
+    @include responsive(phone-1){
+        height: 35vh;
+    }
 }
 .blog-heading{
     // &__hero{}
     text-align: center;
     &__title{
-        font-size: 4rem;
+        font-size: 5rem;
         font-weight: 600;
         padding: 8rem;
         color: $primary;
