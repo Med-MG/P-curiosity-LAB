@@ -1,18 +1,44 @@
-.secondary-variant {color: $secondary-variant;}
+.secondary-variant {
+    color: $secondary-variant;
+}
 
-.u-center-text { text-align: center !important; }
+.u-center-text {
+    text-align: center !important;
+}
 
 //margin bottom utilities
-.u-mb-s { margin-bottom: 1.5rem !important; }
-.u-mb-m {margin-bottom: 4rem !important;}
-.u-mb-b { margin-bottom: 8rem !important;}
+.u-mb-s {
+    margin-bottom: 1.5rem !important;
+}
+
+.u-mb-m {
+    margin-bottom: 4rem !important;
+}
+
+.u-mb-b {
+    margin-bottom: 8rem !important;
+}
 
 //margin top utilities
-.mt-4 {margin-top: 4rem;}
-.u-mt-m { margin-top: 5rem !important; }
-.u-mt-b { margin-top: 8rem !important; }
-.u-mt-h { margin-top: 10rem !important; }
-.u-mr-2 { margin-right: 2rem;}
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.u-mt-m {
+    margin-top: 5rem !important;
+}
+
+.u-mt-b {
+    margin-top: 8rem !important;
+}
+
+.u-mt-h {
+    margin-top: 10rem !important;
+}
+
+.u-mr-2 {
+    margin-right: 2rem;
+}
 
 //hidden utility
 .hidden {
@@ -21,20 +47,28 @@
 
 // styling utilities
 
-.text-muted {color: #8492a6 !important;}
+.text-muted {
+    color: #8492a6 !important;
+}
+
 .list-unstyled {
     padding-left: 0;
     list-style: none;
 }
-.text-light {color: #f8f9fc !important;}
+
+.text-light {
+    color: #f8f9fc !important;
+}
+
 .rounded-top {
     border-top-left-radius: 6px !important;
     border-top-right-radius: 6px !important;
 }
 
 .d-block {
-    display: block !important ;
+    display: block !important;
 }
+
 a {
     text-decoration: none !important;
 }
@@ -42,7 +76,42 @@ a {
 
 .d-mobile {
     display: none !important;
+
     @include responsive(tab-land) {
         display: block !important;
+    }
+}
+
+.header__page-alt {
+    background-image: url(../images/bg-heroPages1.png);
+    position: relative;
+    background-size: cover;
+    background-repeat: round;
+    height: 55vh;
+
+    @include responsive(phone) {
+        height: 40vh;
+    }
+
+    @include responsive(phone-1) {
+        height: 35vh;
+    }
+
+    text-align: center;
+
+    &__title {
+        font-size: 5rem;
+        font-weight: 600;
+        padding: 8rem;
+        color: $primary;
+        text-align: center;
+        color: #10266b;
+        padding: 4rem;
+        @include responsive(tab-port){
+            padding: 3rem;
+        }
+        @include responsive(phone){
+            padding: 2rem;
+        }
     }
 }

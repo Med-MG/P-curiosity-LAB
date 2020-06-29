@@ -1,26 +1,13 @@
-.header__page-alt {
-    background-image: url(../images/bg-heroPages1.png);
-    position: relative;
-    background-size: cover;
-    background-repeat: round;
-    height: 55vh;
-    @include responsive(phone){
-        height: 40vh;
-    }
-    @include responsive(phone-1){
-        height: 35vh;
-    }
-}
-.blog-heading{
-    // &__hero{}
-    text-align: center;
-    &__title{
-        font-size: 5rem;
-        font-weight: 600;
-        padding: 8rem;
-        color: $primary;
-    }
-}
+// .blog-heading{
+//     // &__hero{}
+//     text-align: center;
+//     &__title{
+//         font-size: 5rem;
+//         font-weight: 600;
+//         padding: 8rem;
+//         color: $primary;
+//     }
+// }
 
 .blog-posts{
     padding: 0 10rem;
@@ -36,7 +23,7 @@
         }
     }
     &__title{
-        @include medium-font;
+        @include subtitle-font;
 
     }
     &__grid{
