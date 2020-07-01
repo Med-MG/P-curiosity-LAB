@@ -1,0 +1,31 @@
+.learning-header{
+    .latest-blog-post{
+        &__imgbox{}
+        &__img{}
+        &__tag{}
+        &__title{}
+        &__description{}
+    }
+
+    .learning-list{
+        &__item{
+            &--post{
+                &__imgbox{}
+                &__img{}
+            }
+            &--webinar{
+                &__imgbox{}
+                &__img{}
+            }
+            &--report{
+                &__imgbox{}
+                &__img{}
+            }
+        }
+
+        &__info{
+            &--tag{}
+            &--title{}
+        }
+    }
+}
