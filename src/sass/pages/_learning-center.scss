@@ -1,49 +1,105 @@
-.learning-header{
+// Left part of the header
+.learning-header {
     padding: 0 20rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    column-gap: 2rem;
-    .latest-blog-post{
-        &__imgbox{
-            width: 90%;
+    column-gap: 10rem;
+
+    .latest-blog-post {
+        &__imgbox {
+            width: 100%;
             height: 50rem;
             border-radius: 6px;
             overflow: hidden;
         }
-        &__img{
+
+        &__img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        &__tag{}
-        &__title{}
-        &__description{}
-    }
 
-    .learning-list{
-        &__item{
-            &--post{
-                &__imgbox{}
-                &__img{ 
-            width: 10rem;
-
-                }
-            }
-            &--webinar{
-                &__imgbox{}
-            }
-            &--report{
-                &__imgbox{}
-                &__img{}
-            width: 10rem;
-
-            }
+        &__tag {
+            @extend %blog_tags;
+            margin-top: 2rem;
+            font-weight: 300;
+            font-size: 2rem;
         }
 
-        &__info{
-            &--tag{}
-            &--title{}
+        &__title {
+            font-family: 'Nunito', 'Poppins', sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 2rem 0;
+        }
+
+        &__description {
+            font-family: 'Nunito', 'Poppins', sans-serif;
+            @include small-font;
+            color: $primary-variant;
+            font-weight: 300;
+            width: 70%;
+        }
+    }
+
+    //Right part of the header
+    .learning-list {
+        &__item {
+            display: flex;
+            flex-direction: row;
+            grid-gap: 2rem;
+
+            &:not(:last-child) {
+                margin-bottom: 5rem;
+            }
+
+            &-imgbox {
+                width: 20rem;
+                height: 20rem;
+                border-radius: 5px;
+                overflow: hidden;
+                flex-shrink: 0;
+            }
+
+            &-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &--post {}
+
+            &--webinar {
+                &__box {
+                    @extend .events-page__card-top;
+                    padding: 4rem;
+                }
+
+                &__bg {
+                    @extend .events-page__card-title-box;
+                }
+
+                &__logo-p {
+                    @extend .events-page__card-logo-p;
+                    font-size: 3rem;
+                    width: 5rem;
+                    height: 5rem;
+                }
+
+                &__title {
+                    font-size: 1.5rem;
+                }
+            }
+
+            &--report {}
+        }
+
+        &__info {
+            &--tag {}
+
+            &--title {}
         }
     }
 }

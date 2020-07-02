@@ -171,6 +171,15 @@
 
     }
 
+    &--tertiary {
+        background-color: $tertiary;
+        color: $color-white;
+       
+        &::after {
+            background-color: $tertiary;
+        }
+    }
+
 
     &::after {
         content: "";
@@ -185,6 +194,11 @@
         transition: all .4s;
     }
 
+    &__leaning-center{
+        background-color: $tertiary;
+        font-size: 2rem !important;
+        margin: 2rem 0;
+    }
 }
 
 

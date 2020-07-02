@@ -89,10 +89,11 @@
         text-decoration: none;
         width: 50rem;
         &-category {
-            color: #0055fb;
-            font-size: 1.4rem;
-            line-height: 1;
-            margin: 1rem 0;
+            // color: #0055fb;
+            // font-size: 1.4rem;
+            // line-height: 1;
+            // margin: 1rem 0;
+            @extend %blog_tags;
         }
         &-top {
             @include videoratio(50rem);
