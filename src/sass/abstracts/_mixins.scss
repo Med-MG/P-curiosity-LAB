@@ -123,6 +123,13 @@ for media queries 1em = 16px
     }
 }
 
+@mixin  custom_media($point) {
+    @media screen and (max-width: ($point / 16)*1em) { @content };
+}
+
+// @mixin custom_media-minmax($max-point,$min-point) {
+//     @media (min-width: $min-point) and (max-width: $max-point) { @content };
+// }
 // @media (min-width: 1200px)
 // @media (min-width: 320px) and (max-width: 480px)
 // @media (min-width: 600px)and (max-width: 1024px)

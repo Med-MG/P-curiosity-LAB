@@ -5,6 +5,20 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 10rem;
+    @include custom_media(1580){
+        padding: 0 10rem;
+    }
+    @include custom_media(1700){
+        grid-gap: 5rem;
+    }
+
+    @include responsive(tab-land){
+        grid-template-columns: 1fr;
+    }
+
+    @include responsive(phone){
+        padding: 0 4rem;
+    }
 
     .latest-blog-post {
         &__imgbox {
@@ -12,6 +26,12 @@
             height: 50rem;
             border-radius: 6px;
             overflow: hidden;
+            @include responsive(phone){
+                height: 35rem;
+            }
+            @include responsive(phone-1){
+                height: 25rem;
+            }
         }
 
         &__img {
@@ -61,6 +81,10 @@
                 border-radius: 5px;
                 overflow: hidden;
                 flex-shrink: 0;
+                // @include custom_media-minmax(1200, 1700){
+                //     width: 16rem;
+                //     height: 16rem;
+                // }
             }
 
             &-img {
@@ -69,7 +93,7 @@
                 object-fit: cover;
             }
 
-            &--post {}
+            // &--post {}
 
             &--webinar {
                 &__box {
@@ -90,16 +114,39 @@
 
                 &__title {
                     font-size: 1.5rem;
+                    // @include custom_media-minmax(1200, 1700){
+                    //     font-size: 1.1rem;
+                    // }
                 }
             }
 
-            &--report {}
+            // &--report {}
         }
 
         &__info {
-            &--tag {}
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            &--tag {
+                font-size: $default-font-size;
+                &-1{
+                    color: $secondary-variant;
+                }
+                &-2{
+                    color: $learning-center-yellow;
+                }
+                &-3{
+                    color: $learning-center-pink;
+                }
+            }
 
-            &--title {}
+            &--title {
+                 font-family: 'Nunito', 'Poppins', sans-serif;
+                 @include small-font;
+                //  @include custom_media-minmax(1200, 1700){
+                //      font-size: 1.6rem;
+                //  }
+            }
         }
     }
 }
