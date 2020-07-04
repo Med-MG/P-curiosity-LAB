@@ -39,7 +39,19 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin learnig-center_sizing {
+    @include custom_media(1580){
+        padding: 0 10rem;
+    }
+    @include custom_media(1700){
+        grid-gap: 5rem;
+    }
 
+    @include responsive(phone){
+        padding: 0 4rem;
+        margin-top: 5rem;
+    }
+}
 
 
 @mixin pages_header_1 {

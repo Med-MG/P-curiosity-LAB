@@ -5,21 +5,24 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 10rem;
-    @include custom_media(1580){
+
+    @include custom_media(1580) {
         padding: 0 10rem;
     }
-    @include custom_media(1700){
+
+    @include custom_media(1700) {
         grid-gap: 5rem;
     }
 
-    @include responsive(tab-land){
+    @include responsive(tab-land) {
         grid-template-columns: 1fr;
     }
 
-    @include responsive(phone){
+    @include responsive(phone) {
         padding: 0 4rem;
     }
-// Left part of the header
+
+    // Left part of the header
 
     .latest-blog-post {
         &__imgbox {
@@ -27,10 +30,12 @@
             height: 50rem;
             border-radius: 6px;
             overflow: hidden;
-            @include responsive(phone){
+
+            @include responsive(phone) {
                 height: 35rem;
             }
-            @include responsive(phone-1){
+
+            @include responsive(phone-1) {
                 height: 25rem;
             }
         }
@@ -62,7 +67,8 @@
             color: $primary-variant;
             font-weight: 300;
             width: 70%;
-            @include responsive(phone){
+
+            @include responsive(phone) {
                 width: 80%;
             }
         }
@@ -131,22 +137,26 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+
             &--tag {
                 font-size: $default-font-size;
-                &-1{
+
+                &-1 {
                     color: $secondary-variant;
                 }
-                &-2{
+
+                &-2 {
                     color: $learning-center-yellow;
                 }
-                &-3{
+
+                &-3 {
                     color: $learning-center-pink;
                 }
             }
 
             &--title {
-                 font-family: 'Nunito', 'Poppins', sans-serif;
-                 @include small-font;
+                font-family: 'Nunito', 'Poppins', sans-serif;
+                @include small-font;
                 //  @include custom_media-minmax(1200, 1700){
                 //      font-size: 1.6rem;
                 //  }
@@ -158,82 +168,73 @@
 
 //**** New Blog Posts ****//
 
-.new-posts{
+.new-posts {
     padding: 0 20rem;
     margin-top: 8rem;
-    @include custom_media(1580){
-        padding: 0 10rem;
-    }
-    @include custom_media(1700){
-        grid-gap: 5rem;
-    }
+    @include learnig-center_sizing;
 
-    @include responsive(phone){
-        padding: 0 4rem;
-        margin-top: 5rem;
-    }
-    &__title{
+    &__title {
         @include subtitle-font;
         font-family: 'Nunito', 'Poppins', sans-serif;
         font-weight: 800;
         margin: 4rem 0;
-        @include custom_media(1190){
+
+        @include custom_media(1190) {
             text-align: center;
         }
     }
-    &__lrn-center, &__lrn-center-top{
-        @include custom_media(1190){
+
+    &__lrn-center,
+    &__lrn-center-top {
+        @include custom_media(1190) {
             width: 63rem;
         }
 
-        @include responsive(phone){
+        @include responsive(phone) {
             width: 50rem;
         }
     }
-    &__container{
+
+    &__container {
         display: flex;
         grid-gap: 4rem;
-        @include custom_media(1190){
+
+        @include custom_media(1190) {
             flex-direction: column;
             align-items: center;
         }
     }
 }
-.section-popular{
+
+.section-popular {
     padding: 0 20rem;
     margin-top: 8rem;
-    @include custom_media(1580){
-        padding: 0 10rem;
-    }
-    @include custom_media(1700){
-        grid-gap: 5rem;
-    }
+    @include learnig-center_sizing;
 
-    @include responsive(phone){
-        padding: 0 4rem;
-        margin-top: 5rem;
-    }
-    &__container{
+    &__container {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        @include custom_media(1152){
+
+        @include custom_media(1152) {
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 3rem;
         }
-        @include custom_media(846){
+
+        @include custom_media(846) {
             grid-template-columns: 1fr;
         }
     }
+
     .popular__posts-list {
         &__item {
             display: flex;
             flex-direction: row;
             grid-gap: 2rem;
-    
+
             &:not(:last-child) {
                 margin-bottom: 5rem;
             }
-    
+
             &-imgbox {
                 width: 15rem;
                 height: 15rem;
@@ -245,19 +246,20 @@
                 //     height: 16rem;
                 // }
             }
-    
+
             &-img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
-    
+
         }
 
         &__info {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+
             &--tag {
                 font-size: $default-font-size;
                 color: $secondary-variant;
@@ -274,8 +276,8 @@
             }
 
             &--title {
-                 font-family: 'Nunito', 'Poppins', sans-serif;
-                 @include small-font;
+                font-family: 'Nunito', 'Poppins', sans-serif;
+                @include small-font;
                 //  @include custom_media-minmax(1200, 1700){
                 //      font-size: 1.6rem;
                 //  }
@@ -283,22 +285,41 @@
         }
     }
 
-    &__webinar{
+    &__webinar {
         background-color: $events-color-2;
         padding: 4rem;
-        &-bg{
-        background-color: $tertiary;
-        padding: 4rem;
-        text-align: center;
-        color: $color-white;
-        height: 100%;
+
+        &-bg {
+            background-color: $tertiary;
+            padding: 4rem;
+            text-align: center;
+            color: $color-white;
+            height: 100%;
         }
-        &-title{
+
+        &-title {
             font-size: 2.7rem;
             font-weight: 500;
 
         }
     }
 
-  
+
+}
+
+.events-page {
+    width: unset;
+    padding: 0 20rem;
+    &__grid {
+        grid-gap: 15rem;
+        @include custom_media(1700){
+            grid-gap: 5rem;
+        }
+    }
+    @include learnig-center_sizing;
+
+}
+
+.events-lrn__title {
+    @extend .new-posts__title;
 }
