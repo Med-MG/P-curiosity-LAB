@@ -203,7 +203,7 @@
 
 
 .btn-text {
-
+    &,
     &:link,
     &:visited {
         font-size: 2rem;
@@ -229,6 +229,17 @@
 
     &__learnig-center{
         width: max-content;
+    }
+
+    &__lrn-webinar{
+        color: $color-white !important;
+        margin: 4rem 0;
+        border-bottom: 2.6px solid $color-white !important;
+        &:hover{
+            background-color: $color-white ;
+            color: $primary !important;
+        }
+
     }
 }
 
